@@ -11,7 +11,7 @@ export const CorporateProfileModal = ({ isOpen, onClose }) => {
       <div className="modal-card" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-            <FileText size={22} color="#ff6666" />
+            <FileText size={22} color="#28853b" />
             <h3 className="modal-title">Corporate Profile & Presentation</h3>
           </div>
           <button className="modal-close-btn" onClick={onClose} aria-label="Close modal">

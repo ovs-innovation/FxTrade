@@ -106,8 +106,8 @@
   }
 
   .nav-brand-img {
-    height: 48px;
-    max-height: 52px;
+    height: 56px;
+    max-height: 58px;
   }
   
   .hero-slide-card {
@@ -1167,7 +1167,8 @@
   }
   
   .nav-brand-img {
-    height: 36px;
+    height: 56px;
+    max-height: 58px;
   }
 
   .values-card-desc,

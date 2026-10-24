@@ -89,7 +89,7 @@
 
 .sidebar-nav-link:hover {
   color: var(--primary-red);
-  background-color: rgba(208, 0, 0, 0.04);
+  background-color: rgba(40, 133, 59, 0.06);
   padding-left: 12px;
 }
 
@@ -100,7 +100,7 @@
 .sidebar-nav-link.is-active {
   color: var(--primary-red);
   font-weight: 700;
-  background-color: rgba(208, 0, 0, 0.08);
+  background-color: rgba(40, 133, 59, 0.1);
 }
 
 .sidebar-nav-link.is-active .sidebar-bullet {
@@ -1074,7 +1074,7 @@
   border-radius: 20px;
   padding: 40px 45px;
   border: 2px solid var(--primary-red);
-  box-shadow: 0 12px 35px rgba(208, 0, 0, 0.08);
+  box-shadow: 0 12px 35px rgba(40, 133, 59, 0.1);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1133,13 +1133,13 @@
   transition: all var(--transition-fast);
   text-decoration: none;
   white-space: nowrap;
-  box-shadow: 0 6px 20px rgba(208, 0, 0, 0.28);
+  box-shadow: 0 6px 20px rgba(40, 133, 59, 0.28);
 }
 
 .btn-pill-red:hover {
   background: var(--primary-red-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(208, 0, 0, 0.38);
+  box-shadow: 0 8px 25px rgba(40, 133, 59, 0.38);
 }
 
 @media (max-width: 991px) {

@@ -27,8 +27,8 @@ export const ContactSection = () => {
     }
     if (!formData.phone.trim()) {
       errs.phone = 'Phone number is required';
-    } else if (!/^[0-9+\s-]{8,15}$/.test(formData.phone)) {
-      errs.phone = 'Please enter a valid phone number';
+    } else if (formData.phone.trim().length !== 10) {
+      errs.phone = 'Please enter a valid 10-digit mobile number';
     }
     if (!formData.message.trim()) {
       errs.message = 'Please provide brief details of your financing requirement';
@@ -38,6 +38,15 @@ export const ContactSection = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
+    if (name === 'phone') {
+      // Strictly allow only numbers, up to 10 digits
+      const digitsOnly = value.replace(/\D/g, '').slice(0, 10);
+      setFormData((prev) => ({ ...prev, phone: digitsOnly }));
+      if (errors.phone) {
+        setErrors((prev) => ({ ...prev, phone: null }));
+      }
+      return;
+    }
     setFormData((prev) => ({ ...prev, [name]: value }));
     if (errors[name]) {
       setErrors((prev) => ({ ...prev, [name]: null }));
@@ -197,10 +206,21 @@ export const ContactSection = () => {
                     id="phone"
                     name="phone"
                     type="tel"
+                    inputMode="numeric"
+                    pattern="[0-9]*"
+                    maxLength={10}
                     className="form-control"
-                    placeholder="+91 98765 43210"
+                    placeholder="Enter 10-digit mobile number"
                     value={formData.phone}
                     onChange={handleChange}
+                    onKeyDown={(e) => {
+                      if (
+                        !/[0-9]/.test(e.key) &&
+                        !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight', 'Tab'].includes(e.key)
+                      ) {
+                        e.preventDefault();
+                      }
+                    }}
                   />
                   {errors.phone && <span className="form-error">{errors.phone}</span>}
                 </div>

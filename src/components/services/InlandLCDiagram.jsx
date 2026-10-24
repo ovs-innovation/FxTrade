@@ -27,7 +27,7 @@ export const InlandLCDiagram = () => {
               <path d="M 0 1 L 10 5 L 0 9 z" fill="#0b2f5d" />
             </marker>
             <marker id="arrowRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-              <path d="M 0 1 L 10 5 L 0 9 z" fill="#d00000" />
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#28853b" />
             </marker>
           </defs>
 
@@ -48,7 +48,7 @@ export const InlandLCDiagram = () => {
           <path d="M 285 365 L 565 365" stroke="#0b2f5d" strokeWidth="2.5" markerEnd="url(#arrow)" />
           
           {/* 6. Discounting Bank to Seller (Immediate Funds T+1) */}
-          <path d="M 565 390 L 285 390" stroke="#d00000" strokeWidth="3" markerEnd="url(#arrowRed)" />
+          <path d="M 565 390 L 285 390" stroke="#28853b" strokeWidth="3" markerEnd="url(#arrowRed)" />
 
           {/* 7. Discounting Bank to Issuing Bank (Docs for Acceptance) */}
           <path d="M 635 315 L 635 145" stroke="#0b2f5d" strokeWidth="2.5" strokeDasharray="5,5" markerEnd="url(#arrow)" />
@@ -80,13 +80,13 @@ export const InlandLCDiagram = () => {
             <rect width="195" height="28" rx="8" fill="#0b2f5d" />
             <text x="97" y="19" fill="#ffffff" fontSize="13" fontWeight="700" textAnchor="middle">BENEFICIARY (SELLER)</text>
             <text x="97" y="48" fill="#565b63" fontSize="11" textAnchor="middle">Dispatches materials & invoice</text>
-            <text x="97" y="66" fill="#d00000" fontSize="11" fontWeight="700" textAnchor="middle">Receives early T+1 funds</text>
+            <text x="97" y="66" fill="#28853b" fontSize="11" fontWeight="700" textAnchor="middle">Receives early T+1 funds</text>
           </g>
 
           {/* Party Node 4: Discounting Bank / FXTrade - Bottom Right */}
           <g transform="translate(565, 320)" filter="url(#nodeShadow)">
-            <rect width="195" height="95" rx="8" fill="#ffffff" stroke="#d00000" strokeWidth="2.5" />
-            <rect width="195" height="28" rx="8" fill="#d00000" />
+            <rect width="195" height="95" rx="8" fill="#ffffff" stroke="#28853b" strokeWidth="2.5" />
+            <rect width="195" height="28" rx="8" fill="#28853b" />
             <text x="97" y="19" fill="#ffffff" fontSize="12" fontWeight="700" textAnchor="middle">DISCOUNTING BANK / FXTRADE</text>
             <text x="97" y="48" fill="#565b63" fontSize="11" textAnchor="middle">Verifies compliant documents</text>
             <text x="97" y="66" fill="#0b2f5d" fontSize="11" fontWeight="700" textAnchor="middle">Disburses non-recourse capital</text>
@@ -118,10 +118,10 @@ export const InlandLCDiagram = () => {
           <text x="425" y="360" fill="#ffffff" fontSize="11" fontWeight="800" textAnchor="middle">5</text>
           <text x="425" y="345" fill="#0b2f5d" fontSize="10" fontWeight="600" textAnchor="middle">Docs Presented</text>
 
-          {/* Step 6: Highlighted in Red (Payment) */}
-          <circle cx="425" cy="405" r="14" fill="#d00000" />
+          {/* Step 6: Highlighted in Green (Payment) */}
+          <circle cx="425" cy="405" r="14" fill="#28853b" />
           <text x="425" y="410" fill="#ffffff" fontSize="11" fontWeight="800" textAnchor="middle">6</text>
-          <text x="425" y="425" fill="#d00000" fontSize="10.5" fontWeight="700" textAnchor="middle">Immediate Payment (T+1)</text>
+          <text x="425" y="425" fill="#28853b" fontSize="10.5" fontWeight="700" textAnchor="middle">Immediate Payment (T+1)</text>
 
           {/* Step 7 */}
           <circle cx="625" cy="250" r="14" fill="#0b2f5d" />

@@ -22,7 +22,7 @@ export const companyData = {
       description: "Extensive syndication network across top domestic PSUs, private banks & foreign lenders"
     },
     {
-      value: "255+",
+      value: "500+",
       label: "Clients",
       title: "Corporate Enterprises",
       description: "Trusted by importers, exporters, SMEs, EPC contractors & mid-corporates pan-India"

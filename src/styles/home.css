@@ -119,11 +119,11 @@
   width: 48px;
   height: 48px;
   border-radius: var(--radius-full);
-  background: rgba(160, 20, 20, 0.65);
+  background: rgba(40, 133, 59, 0.85);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   color: var(--white);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,10 +134,10 @@
 }
 
 .hero-nav-btn:hover {
-  background: var(--primary-red);
+  background: var(--primary-green-hover);
   color: var(--white);
   transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 6px 22px rgba(208, 0, 0, 0.48);
+  box-shadow: 0 6px 22px rgba(40, 133, 59, 0.55);
 }
 
 .hero-nav-btn.prev {
@@ -173,7 +173,7 @@
 .hero-dot.is-active {
   background: var(--primary-red);
   transform: scale(1.22);
-  box-shadow: 0 2px 10px rgba(208, 0, 0, 0.65);
+  box-shadow: 0 2px 10px rgba(40, 133, 59, 0.6);
 }
 
 .hero-dot:hover:not(.is-active) {
@@ -229,7 +229,7 @@
   padding: 68px 0;
   color: var(--white);
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(208, 0, 0, 0.86) 0%, rgba(160, 0, 0, 0.90) 100%),
+  background: linear-gradient(135deg, rgba(40, 133, 59, 0.90) 0%, rgba(11, 47, 93, 0.94) 100%),
               url('/images/about/stats-bg-analytics.jpg') center center / cover no-repeat;
 }
 
@@ -309,7 +309,7 @@
 .service-overview-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--shadow-lg);
-  border-color: rgba(208, 0, 0, 0.2);
+  border-color: rgba(40, 133, 59, 0.25);
 }
 
 .service-card-media {
@@ -791,7 +791,7 @@
 }
 
 .contact-info-icon {
-  color: #ff6666;
+  color: #4ade80;
   flex-shrink: 0;
   margin-top: 3px;
 }
@@ -856,7 +856,7 @@
 
 .btn-contact-submit:hover {
   background-color: var(--primary-red-hover);
-  box-shadow: 0 4px 15px rgba(208, 0, 0, 0.35);
+  box-shadow: 0 4px 15px rgba(40, 133, 59, 0.35);
 }
 
 .form-success-banner {

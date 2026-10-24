@@ -1,8 +1,12 @@
 :root {
-  /* Strict Corporate Color Palette (Reference Investeurs & FXTrade) */
+  /* Strict Corporate Color Palette (Matching FXTrade Green & Blue Logo) */
   --primary-navy: #0b2f5d;
-  --primary-red: #d00000;
-  --primary-red-hover: #b00000;
+  --primary-green: #28853b;
+  --primary-green-hover: #1e6b2e;
+  --primary-green-light: #eaf5eb;
+  --primary-green-subtle: #f0f7ec;
+  --primary-red: #28853b;
+  --primary-red-hover: #1e6b2e;
   --corporate-blue: #4569ab;
   --blue-dark: #173d74;
   --blue-accent: #1e5ba3;
