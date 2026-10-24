@@ -1,0 +1,1180 @@
+/* Responsive Breakpoints & Mobile Optimization */
+
+/* Extra Large Screens & Standard Desktop (1200px - 1440px) */
+@media (max-width: 1280px) {
+  .hero-headline {
+    font-size: 38px;
+  }
+  
+  .services-grid-2col {
+    gap: 20px;
+  }
+  
+  .service-card-media {
+    width: 40%;
+  }
+  
+  .service-card-body {
+    width: 60%;
+    padding: 18px;
+  }
+}
+
+/* Tablet Landscape & Small Desktop (992px - 1199px) */
+@media (max-width: 1100px) {
+  .nav-menu {
+    gap: 18px;
+  }
+  
+  .nav-link {
+    font-size: 13px;
+  }
+  
+  .reachability-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+  }
+  
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) {
+    border-bottom: none;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+  }
+  
+  .home-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .values-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .service-layout-grid {
+    grid-template-columns: 260px 1fr;
+    gap: 30px;
+  }
+  
+  .steps-9-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .project-timeline-horizontal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .intl-advantage-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Tablets (768px - 991px) */
+@media (max-width: 991px) {
+  /* Hide Desktop Navigation & Show Mobile Toggle */
+  .nav-menu,
+  .btn-nav-ppt {
+    display: none;
+  }
+  
+  .mobile-toggle-btn {
+    display: flex;
+  }
+  
+  .navbar-pill-wrapper,
+  .navbar-inner-wrapper {
+    padding: 10px 20px;
+    min-height: auto;
+  }
+  
+  .site-header.home-variant {
+    top: 8px;
+    padding: 8px 0 12px;
+  }
+
+  .nav-brand-img {
+    height: 48px;
+    max-height: 52px;
+  }
+  
+  .hero-slide-card {
+    min-height: 480px;
+  }
+  
+  .hero-headline {
+    font-size: 32px;
+  }
+  
+  .hero-description {
+    font-size: 15px;
+  }
+  
+  .services-grid-2col {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-overview-card {
+    flex-direction: column;
+  }
+  
+  .service-card-media {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .service-card-body {
+    width: 100%;
+  }
+  
+  .why-choose-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .why-choose-media img {
+    height: 340px;
+  }
+  
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .about-intro-grid,
+  .about-pillars-grid,
+  .serving-goals-grid,
+  .values-intro-section,
+  .join-intro-grid,
+  .life-pillars-3col {
+    grid-template-columns: 1fr;
+  }
+  
+  .service-layout-grid,
+  .leadership-layout-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .service-content-col,
+  .leadership-profiles-stack {
+    order: 1;
+    width: 100%;
+  }
+  
+  .service-sidebar,
+  .leadership-sidebar {
+    order: 2;
+    width: 100%;
+    position: static !important;
+    top: auto !important;
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+  
+  .leader-profile-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .leader-photo-wrap {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  
+  .culture-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bg-curved-flow {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Devices (up to 767px) */
+@media (max-width: 767px) {
+  :root {
+    --container-padding: 16px;
+  }
+  
+  .section-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+  
+  /* Hero Section: Matching Investeurs Mobile Reference */
+  .hero-slider-section {
+    padding: 6px 0 20px;
+  }
+
+  .hero-slider-container {
+    padding: 0 14px;
+  }
+  
+  .hero-slide-card {
+    height: 440px !important;
+    min-height: 420px !important;
+    max-height: 460px !important;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  }
+  
+  .hero-slide-content {
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-badge {
+    font-size: 11.5px;
+    padding: 5px 16px;
+    margin-bottom: 12px;
+    border-radius: 20px;
+    background-color: rgba(20, 36, 62, 0.8);
+  }
+  
+  .hero-headline {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+    font-weight: 600;
+  }
+  
+  .hero-description {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0.92;
+  }
+  
+  .hero-btn-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .hero-btn-group .btn {
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 24px;
+  }
+  
+  /* Hide hero prev/next arrow circles on mobile matching Investeurs */
+  .hero-nav-btn {
+    display: none !important;
+  }
+  
+  /* Hero dots positioned in bottom-right corner like Investeurs */
+  .hero-pagination-dots {
+    position: absolute;
+    bottom: 16px;
+    right: 18px;
+    left: auto;
+    transform: none;
+    display: flex;
+    gap: 6px;
+    z-index: 3;
+  }
+
+  .hero-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+  .hero-dot.is-active {
+    width: 7px;
+    background-color: var(--primary-red);
+  }
+
+  /* What We Do section on mobile */
+  .what-we-do-section {
+    padding: 45px 0 40px;
+  }
+
+  /* Stats Section: Compact 2x2 Grid Style */
+  .stats-section {
+    padding: 42px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+  
+  .stat-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 4px 14px;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+
+  .stat-label {
+    font-size: 10.5px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+
+  .stat-subtext {
+    font-size: 11px;
+    line-height: 1.35;
+    margin-top: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: 0.85;
+  }
+
+  /* Services Overview Cards */
+  .services-overview-section {
+    padding: 45px 0;
+  }
+
+  .services-grid-2col {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .service-overview-card {
+    flex-direction: column;
+    border-radius: 16px;
+  }
+
+  .service-card-media {
+    width: 100%;
+    height: 175px;
+    min-height: 175px;
+  }
+
+  .service-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .service-card-body {
+    width: 100%;
+    padding: 18px 16px;
+  }
+
+  .service-card-title {
+    font-size: 17px;
+  }
+
+  /* Reachability Section: 2-Column Grid Style */
+  .reachability-section {
+    padding: 45px 0;
+  }
+
+  .reachability-carousel-wrapper {
+    padding: 0;
+  }
+
+  .reachability-track {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+  }
+
+  .reachability-card {
+    padding: 16px 12px;
+    min-height: 170px;
+    border-radius: 12px;
+  }
+
+  .reachability-number {
+    font-size: 13px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .reachability-icon-wrap {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .reachability-card-title {
+    font-size: 13px;
+    line-height: 1.25;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+
+  .reachability-card-desc {
+    font-size: 11px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .carousel-nav-btn {
+    display: none;
+  }
+
+  /* Clients Grid: 2-Column Grid */
+  .clients-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .client-box {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .client-sector-title {
+    font-size: 12.5px;
+  }
+
+  .client-sector-count {
+    font-size: 11px;
+  }
+  
+  .form-row-2 {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .footer-bottom-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Inner Page Title Banner */
+  .page-title-banner {
+    padding: 28px 0;
+  }
+  
+  .banner-content-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  
+  .banner-heading {
+    font-size: 21px;
+    line-height: 1.25;
+    font-weight: 800;
+  }
+
+  .banner-breadcrumb {
+    font-size: 11.5px;
+  }
+
+  /* Page Wrapper Spacing */
+  .about-page-wrapper,
+  .leadership-page-wrapper,
+  .values-page-wrapper,
+  .join-us-page-wrapper,
+  .life-page-wrapper,
+  .service-page-wrapper {
+    padding: 35px 0 50px;
+  }
+
+  .service-main-heading {
+    font-size: 19px;
+    line-height: 1.3;
+  }
+
+  .service-heading-underline {
+    width: 38px;
+    height: 2.5px;
+    margin-bottom: 14px;
+  }
+
+  .service-text {
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+
+  .service-section-block {
+    margin-bottom: 35px;
+    padding-bottom: 30px;
+  }
+
+  /* About Us Page Mobile Grid & Proportions */
+  .about-intro-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .about-intro-media img {
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  .about-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin: 25px 0 45px;
+  }
+
+  .about-pillar-card {
+    padding: 16px 12px;
+    border-radius: 12px;
+    border-top-width: 3px;
+  }
+
+  .pillar-num {
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+
+  .pillar-title {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  .pillar-desc {
+    font-size: 11px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .exposure-section-block {
+    padding: 28px 18px;
+    border-radius: 14px;
+    margin-bottom: 45px;
+  }
+
+  .exposure-title {
+    font-size: 18px;
+  }
+
+  .exposure-lead {
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+  }
+
+  .exposure-points-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 8px;
+  }
+
+  .exposure-point-item {
+    font-size: 11px;
+    gap: 6px;
+    line-height: 1.35;
+  }
+
+  .exposure-point-icon {
+    width: 14px;
+    height: 14px;
+    margin-top: 2px;
+  }
+
+  .serving-goals-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  /* Contact Us Page Department 2x2 Grid */
+  .contact-dept-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin-bottom: 35px;
+  }
+
+  .contact-dept-card {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .contact-dept-title {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+  }
+
+  .contact-dept-email {
+    font-size: 10.5px;
+  }
+
+  .contact-dept-phone {
+    font-size: 10.5px;
+  }
+
+  .contact-map-panel {
+    height: 220px !important;
+    border-radius: 14px;
+  }
+
+  .contact-form-panel {
+    padding: 22px 16px;
+    border-radius: 14px;
+  }
+
+  /* Our Values Page: Compact 2-Column (2x3 Grid) */
+  .values-intro-section {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 35px;
+  }
+
+  .values-intro-section img {
+    height: 220px;
+    border-radius: 12px;
+  }
+
+  .values-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+  }
+
+  .values-card {
+    padding: 16px 12px;
+    min-height: 175px;
+    border-radius: 12px;
+  }
+
+  .values-card-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 10px;
+  }
+
+  .values-card-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .values-card-title {
+    font-size: 13.5px;
+    margin-bottom: 3px;
+  }
+
+  .values-card-subtitle {
+    font-size: 9.5px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+
+  .values-card-desc {
+    font-size: 10.5px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Life at FXTrade Page: Pillars & Culture 2-Column Gallery */
+  .life-pillars-3col {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 35px;
+  }
+
+  .life-card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .life-card-title {
+    font-size: 17px;
+  }
+
+  .life-card-tagline {
+    font-size: 11.5px;
+    margin-bottom: 8px;
+  }
+
+  .life-card-desc {
+    font-size: 12px;
+    line-height: 1.55;
+  }
+
+  .life-highlights-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .life-highlight-card {
+    padding: 16px 14px;
+    border-radius: 10px;
+  }
+
+  .life-highlight-title {
+    font-size: 13.5px;
+  }
+
+  .life-highlight-desc {
+    font-size: 11.5px;
+  }
+
+  .culture-gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .gallery-photo-card {
+    height: 135px;
+    border-radius: 10px;
+  }
+
+  .gallery-caption {
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+
+  /* Leadership Team Page Mobile Structure */
+  .leadership-layout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .leadership-profiles-stack {
+    order: 1;
+    width: 100%;
+  }
+
+  .leadership-sidebar {
+    order: 2;
+    width: 100%;
+    position: static !important;
+    top: auto !important;
+    margin-top: 35px;
+    margin-bottom: 0;
+  }
+
+  .leader-profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 18px;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    background: var(--white);
+  }
+
+  .leader-photo-wrap {
+    width: 160px;
+    height: 180px;
+    max-width: 160px;
+    margin: 0 auto 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .leader-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .leader-info {
+    width: 100%;
+  }
+
+  .leader-info h3 {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 4px;
+    color: var(--primary-navy);
+    font-weight: 800;
+  }
+
+  .leader-designation {
+    font-size: 13px;
+    text-align: center;
+    color: var(--primary-red);
+    font-weight: 700;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .leader-experience {
+    font-size: 11.5px;
+    text-align: center;
+    margin-bottom: 14px;
+    display: block;
+    color: var(--text-muted);
+    font-weight: 600;
+  }
+
+  .leader-bio {
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--text-secondary);
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  .leader-expertise-tags {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .expertise-tag {
+    font-size: 11px;
+    padding: 4px 10px;
+  }
+
+  .leadership-sidebar,
+  .service-sidebar {
+    padding: 20px 16px;
+    border-radius: 12px;
+    position: static !important;
+    top: auto !important;
+  }
+
+  .sidebar-heading {
+    font-size: 14.5px;
+    margin-bottom: 12px;
+  }
+
+  .sidebar-nav-link {
+    font-size: 12.5px;
+    padding: 8px 6px;
+  }
+
+  .sidebar-cta-widget {
+    padding: 16px 14px;
+    border-radius: 10px;
+  }
+
+  .sidebar-cta-widget h4 {
+    font-size: 14px;
+  }
+
+  .sidebar-cta-widget p {
+    font-size: 11.5px;
+  }
+
+  /* Debt Syndication: 2-Column Steps & Stages */
+  .steps-9-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin: 20px 0;
+  }
+
+  .step-9-card {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .step-9-num {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .step-9-title {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+  }
+
+  .step-9-desc {
+    font-size: 10.5px;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .project-timeline-horizontal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin: 20px 0;
+  }
+
+  .timeline-stage-card {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .stage-badge {
+    font-size: 9.5px;
+    margin-bottom: 4px;
+  }
+
+  .stage-title {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+  }
+
+  .stage-desc {
+    font-size: 10.5px;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .appraisal-stages-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .appraisal-stage-card {
+    padding: 14px 12px;
+  }
+
+  /* Domestic Trade Finance: 2x2 Curved Flow & Guarantees */
+  .bg-curved-flow {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin: 18px 0;
+  }
+
+  .bg-step-card {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .bg-step-num {
+    width: 26px;
+    height: 26px;
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .bg-step-title {
+    font-size: 12.5px;
+    margin-bottom: 4px;
+  }
+
+  .bg-step-desc {
+    font-size: 10.5px;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .dtf-benefits-grid,
+  .itf-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .dtf-benefit-card,
+  .itf-benefit-card {
+    padding: 16px 14px;
+  }
+
+  .dtf-guarantees-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .dtf-guarantee-card {
+    padding: 12px 10px;
+    border-radius: 8px;
+  }
+
+  .dtf-guarantee-type {
+    font-size: 12.5px;
+  }
+
+  .dtf-guarantee-desc {
+    font-size: 10.5px;
+    line-height: 1.35;
+  }
+
+  /* International Trade Finance: 2x2 Advantage & Buyer's Credit */
+  .intl-advantage-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin: 20px 0;
+  }
+
+  .intl-card {
+    border-radius: 10px;
+  }
+
+  .intl-card-header {
+    padding: 10px 12px;
+    font-size: 11.5px;
+  }
+
+  .intl-card-body {
+    padding: 12px 10px;
+    font-size: 10.5px;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .buyers-credit-steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 10px;
+    margin: 18px 0;
+  }
+
+  .buyers-credit-step-card {
+    padding: 14px 10px;
+    border-radius: 10px;
+  }
+
+  .buyers-credit-step-num {
+    width: 24px;
+    height: 24px;
+    font-size: 11px;
+    margin-bottom: 6px;
+  }
+
+  .buyers-credit-step-title {
+    font-size: 12.5px;
+    margin-bottom: 3px;
+  }
+
+  .buyers-credit-step-desc {
+    font-size: 10.5px;
+    line-height: 1.35;
+  }
+
+  /* Checklist & Tables */
+  .service-feature-checklist {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 18px 0;
+  }
+
+  .checklist-item {
+    font-size: 12.5px;
+    gap: 8px;
+    line-height: 1.45;
+  }
+
+  .checklist-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .openings-table-container,
+  .process-table-box,
+  .diagram-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+
+  .openings-table th,
+  .openings-table td {
+    padding: 10px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .process-table-row {
+    grid-template-columns: 65px 120px 1fr;
+    padding: 10px 12px;
+    font-size: 11.5px;
+    min-width: 420px;
+  }
+
+  .openings-submit-box {
+    padding: 24px 18px;
+  }
+
+  .openings-submit-box h3 {
+    font-size: 16px;
+  }
+
+  .openings-submit-box p {
+    font-size: 12.5px;
+  }
+
+  /* Floating Buttons */
+  .floating-actions-container {
+    bottom: 95px;
+    right: 16px;
+  }
+  
+  .floating-whatsapp-btn {
+    width: 44px;
+    height: 44px;
+  }
+  
+  .scroll-top-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Small Screens (360px - 480px) */
+@media (max-width: 480px) {
+  .hero-headline {
+    font-size: 19px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  
+  .nav-brand-img {
+    height: 36px;
+  }
+
+  .values-card-desc,
+  .step-9-desc,
+  .bg-step-desc,
+  .about-pillar-card .pillar-desc {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}

@@ -1,0 +1,886 @@
+/* Home Page Styles (Strict Reference Design Implementation) */
+
+/* ==========================================================================
+   Section 1: Hero Slider
+   ========================================================================== */
+/* ==========================================================================
+   Section 1: Hero Slider
+   ========================================================================== */
+/* ==========================================================================
+   Section 1: Hero Slider
+   ========================================================================== */
+.hero-slider-section {
+  padding: 12px 0 26px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slider-container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.hero-slide-card {
+  position: relative;
+  height: calc(100vh - 150px);
+  min-height: 540px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.14);
+}
+
+.hero-slides-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.65s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.hero-slide-item {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hero-slide-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(11, 47, 93, 0.85) 0%, rgba(16, 28, 48, 0.78) 50%, rgba(180, 0, 0, 0.35) 100%);
+  z-index: 1;
+}
+
+.hero-slide-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 960px;
+  padding: 24px 36px;
+  color: var(--white);
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 6px 20px;
+  background-color: rgba(20, 36, 62, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: var(--radius-full);
+  font-size: 13.5px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.hero-headline {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.22;
+  margin-bottom: 16px;
+  color: var(--white);
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.4);
+}
+
+.hero-description {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.94);
+  margin: 0 auto 22px;
+  max-width: 800px;
+  font-weight: 300;
+}
+
+.hero-btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* Hero Carousel Arrow Controls */
+.hero-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: rgba(160, 20, 20, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  transition: all var(--transition-fast);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28);
+}
+
+.hero-nav-btn:hover {
+  background: var(--primary-red);
+  color: var(--white);
+  transform: translateY(-50%) scale(1.08);
+  box-shadow: 0 6px 22px rgba(208, 0, 0, 0.48);
+}
+
+.hero-nav-btn.prev {
+  left: 35px;
+}
+
+.hero-nav-btn.next {
+  right: 35px;
+}
+
+.hero-pagination-dots {
+  position: absolute;
+  bottom: 22px;
+  right: 36px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 3;
+}
+
+.hero-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+.hero-dot.is-active {
+  background: var(--primary-red);
+  transform: scale(1.22);
+  box-shadow: 0 2px 10px rgba(208, 0, 0, 0.65);
+}
+
+.hero-dot:hover:not(.is-active) {
+  background: var(--white);
+  transform: scale(1.15);
+}
+
+/* ==========================================================================
+   Section 2: What We Do
+   ========================================================================== */
+.what-we-do-section {
+  background-color: var(--white);
+  padding: 80px 0;
+}
+
+.what-we-do-card {
+  text-align: center;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.what-we-do-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 35px;
+}
+
+.what-we-do-img-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 35px;
+  position: relative;
+}
+
+.what-we-do-img {
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.what-we-do-img-wrapper:hover .what-we-do-img {
+  transform: scale(1.02);
+}
+
+/* ==========================================================================
+   Section 3: Statistics Banner (Full Width Red with Business Background Image)
+   ========================================================================== */
+.statistics-section {
+  position: relative;
+  padding: 68px 0;
+  color: var(--white);
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(208, 0, 0, 0.86) 0%, rgba(160, 0, 0, 0.90) 100%),
+              url('/images/about/stats-bg-analytics.jpg') center center / cover no-repeat;
+}
+
+.statistics-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 75% 30%, rgba(255, 255, 255, 0.14) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 10px 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.stat-item:last-child {
+  border-right: none;
+}
+
+.stat-number {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  color: var(--white);
+  letter-spacing: -1px;
+}
+
+.stat-title {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+  color: var(--white);
+}
+
+.stat-description {
+  font-size: 12.5px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.45;
+}
+
+/* ==========================================================================
+   Section 4: Our Services (Two-Column Desktop Card Grid)
+   ========================================================================== */
+.services-overview-section {
+  background-color: var(--background-light);
+  padding: 85px 0;
+}
+
+.services-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.service-overview-card {
+  background-color: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.service-overview-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(208, 0, 0, 0.2);
+}
+
+.service-card-media {
+  width: 42%;
+  min-height: 260px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.service-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.service-overview-card:hover .service-card-media img {
+  transform: scale(1.05);
+}
+
+.service-card-body {
+  width: 58%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 10px;
+  line-height: 1.35;
+}
+
+.service-card-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.service-features-list {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.service-feature-item {
+  font-size: 12.5px;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.service-feature-bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: var(--radius-full);
+  background-color: var(--primary-red);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Section 5: Our Reachability (Horizontal Industry Carousel)
+   ========================================================================== */
+.reachability-section {
+  background-color: var(--white);
+  padding: 85px 0;
+  position: relative;
+}
+
+.reachability-carousel-wrapper {
+  position: relative;
+  padding: 0 50px;
+}
+
+.reachability-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.reachability-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 28px 22px;
+  position: relative;
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  min-height: 240px;
+}
+
+.reachability-card:hover {
+  border-color: var(--corporate-blue);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.reachability-number {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  font-size: 16px;
+  font-weight: 800;
+  color: rgba(11, 47, 93, 0.2);
+}
+
+.reachability-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background-color: var(--blue-subtle);
+  color: var(--primary-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.reachability-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+}
+
+.reachability-card-desc {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background-color: var(--primary-red);
+  color: var(--white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 2;
+}
+
+.carousel-nav-btn:hover {
+  background-color: var(--primary-red-hover);
+  transform: translateY(-50%) scale(1.08);
+}
+
+.carousel-nav-btn.prev {
+  left: 0;
+}
+
+.carousel-nav-btn.next {
+  right: 0;
+}
+
+/* ==========================================================================
+   Section 6: Why Choose Us (Deep Navy Section)
+   ========================================================================== */
+.why-choose-us-section {
+  background-color: var(--primary-navy);
+  color: var(--white);
+  padding: 90px 0;
+  position: relative;
+}
+
+.why-choose-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.why-choose-points {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin-top: 30px;
+}
+
+.why-point-row {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.why-point-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #ff8080;
+}
+
+.why-point-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 5px;
+}
+
+.why-point-desc {
+  font-size: 13.5px;
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.6;
+}
+
+.why-choose-media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.why-choose-media img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   Section 7: Client Testimonials (Warm Off-White Background)
+   ========================================================================== */
+.testimonials-section {
+  background-color: var(--background-cream);
+  padding: 70px 0 65px;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.testimonial-section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-red);
+  margin-bottom: 10px;
+  letter-spacing: -0.2px;
+  text-transform: none;
+}
+
+.testimonial-section-line {
+  width: 65px;
+  height: 2.5px;
+  background-color: var(--primary-navy);
+  margin: 0 auto;
+}
+
+/* Carousel Viewport & Sliding Track */
+.testimonials-carousel-viewport {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.testimonials-carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.55s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+}
+
+.testimonial-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.testimonial-quote-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 860px;
+  margin: 0 auto 6px auto;
+  padding-left: 8px;
+}
+
+.testimonial-quote-outline {
+  width: 32px;
+  height: 25px;
+  opacity: 0.8;
+}
+
+/* Fixed height container so the content NEVER shrinks or jumps between slides */
+.testimonial-text-box {
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.testimonial-text {
+  font-size: 15.5px;
+  line-height: 1.85;
+  color: #4b5563;
+  font-style: normal;
+  font-weight: 400;
+  max-width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-author-wrap {
+  margin-bottom: 8px;
+  min-height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-author-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.testimonial-author-company {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--primary-navy);
+}
+
+.testimonial-nav-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.testimonial-chevron-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary-red);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.testimonial-chevron-btn:hover {
+  transform: scale(1.15);
+  opacity: 0.85;
+}
+
+.testimonial-square-dots {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.testimonial-square-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 1px;
+  background-color: var(--primary-navy);
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.testimonial-square-dot.active {
+  background-color: var(--primary-red);
+}
+
+.testimonial-square-dot:hover {
+  transform: scale(1.15);
+}
+
+/* ==========================================================================
+   Section 8: Our Clients
+   ========================================================================== */
+.clients-section {
+  background-color: var(--white);
+  padding: 75px 0;
+}
+
+.clients-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.client-box {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 22px 18px;
+  text-align: center;
+  background-color: var(--white);
+  transition: all var(--transition-fast);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 110px;
+}
+
+.client-box:hover {
+  border-color: var(--primary-red);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-3px);
+}
+
+.client-sector-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 4px;
+}
+
+.client-sector-count {
+  font-size: 12px;
+  color: var(--primary-red);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   Section 9: Contact Us Section (Dark Navy with Industrial Infrastructure Background)
+   ========================================================================== */
+.home-contact-section {
+  position: relative;
+  padding: 85px 0;
+  color: var(--white);
+  background: linear-gradient(135deg, rgba(8, 28, 56, 0.88) 0%, rgba(11, 47, 93, 0.91) 100%),
+              url('/images/about/contact-bg-industrial.jpg') center center / cover no-repeat;
+}
+
+.home-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr 0.95fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+/* Column 1: Info */
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.contact-info-icon {
+  color: #ff6666;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.contact-info-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-info-detail {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* Column 2: Form Panel */
+.contact-form-panel {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  box-shadow: var(--shadow-lg);
+  color: var(--text-primary);
+}
+
+.contact-form-panel h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 6px;
+}
+
+.contact-form-panel p {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.btn-contact-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary-red);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius-full);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.btn-contact-submit:hover {
+  background-color: var(--primary-red-hover);
+  box-shadow: 0 4px 15px rgba(208, 0, 0, 0.35);
+}
+
+.form-success-banner {
+  background-color: #e6f7eb;
+  border: 1px solid #52c41a;
+  color: #237804;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+/* Column 3: Map */
+.contact-map-col {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-height: 380px;
+}
+
+.contact-map-col iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+  border: none;
+}

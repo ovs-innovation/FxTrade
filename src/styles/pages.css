@@ -1,0 +1,784 @@
+/* Styles for Inner Pages: About Us, Leadership Team, Our Values, Careers, Life at FXTrade, Contact Us, 404 */
+
+/* ==========================================================================
+   About Us Page
+   ========================================================================== */
+.about-page-wrapper {
+  padding: 60px 0 80px;
+}
+
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 45px;
+  align-items: center;
+  margin-bottom: 70px;
+}
+
+.about-intro-text p {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-intro-media {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.about-intro-media img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.about-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 40px 0 70px;
+}
+
+.about-pillar-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--corporate-blue);
+}
+
+.about-pillar-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-top-color: var(--primary-red);
+}
+
+.pillar-num {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--primary-red);
+  margin-bottom: 8px;
+}
+
+.pillar-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+}
+
+.pillar-desc {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Experience, Exposure & Expertise Strip */
+.exposure-section-block {
+  background-color: var(--background-light);
+  border-radius: var(--radius-lg);
+  padding: 45px 40px;
+  margin-bottom: 70px;
+}
+
+.exposure-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--black);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.exposure-underline {
+  width: 45px;
+  height: 3px;
+  background-color: var(--primary-red);
+  margin-bottom: 20px;
+}
+
+.exposure-lead {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.exposure-points-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px 24px;
+}
+
+.exposure-point-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--text-primary);
+}
+
+.exposure-point-icon {
+  color: var(--primary-red);
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+/* Serving Business Goals */
+.serving-goals-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+
+/* ==========================================================================
+   Leadership Team Page
+   ========================================================================== */
+.leadership-page-wrapper {
+  padding: 60px 0 80px;
+}
+
+.leadership-layout-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.leadership-sidebar {
+  background-color: var(--background-light);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  padding: 22px 18px;
+}
+
+@media (min-width: 992px) {
+  .leadership-sidebar {
+    position: sticky;
+    top: 90px;
+  }
+}
+
+.leadership-profiles-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.leader-profile-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 28px;
+  align-items: flex-start;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.leader-profile-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.leader-photo-wrap {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-light);
+}
+
+.leader-photo-wrap img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.leader-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 4px;
+}
+
+.leader-designation {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--primary-red);
+  margin-bottom: 6px;
+  display: block;
+}
+
+.leader-experience {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.leader-bio {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.leader-expertise-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.expertise-tag {
+  font-size: 11px;
+  font-weight: 600;
+  background-color: var(--blue-subtle);
+  color: var(--corporate-blue);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+/* ==========================================================================
+   Our Values Page (Strict Blue Shades Card Grid)
+   ========================================================================== */
+.values-page-wrapper {
+  padding: 60px 0 80px;
+}
+
+.values-intro-section {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.values-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.values-card {
+  border-radius: var(--radius-md);
+  padding: 30px 24px;
+  color: var(--white);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  min-height: 240px;
+}
+
+.values-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.values-card.card-blue-deep {
+  background: linear-gradient(135deg, #092347 0%, var(--primary-navy) 100%);
+}
+
+.values-card.card-blue-medium {
+  background: linear-gradient(135deg, var(--blue-dark) 0%, var(--corporate-blue) 100%);
+}
+
+.values-card.card-blue-dark {
+  background: linear-gradient(135deg, #0d3870 0%, #174e96 100%);
+}
+
+.values-card.card-blue-teal {
+  background: linear-gradient(135deg, #0b4f6c 0%, #1e708f 100%);
+}
+
+.values-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: var(--white);
+}
+
+.values-card-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: var(--white);
+}
+
+.values-card-subtitle {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.values-card-desc {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Join Us / Current Openings Page
+   ========================================================================== */
+.join-us-page-wrapper {
+  padding: 60px 0 80px;
+}
+
+.join-intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.openings-table-container {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  overflow-x: auto;
+  margin-bottom: 50px;
+  box-shadow: var(--shadow-sm);
+}
+
+.openings-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.openings-table th {
+  background-color: var(--primary-navy);
+  color: var(--white);
+  padding: 14px 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.openings-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+}
+
+.openings-table tr:hover td {
+  background-color: var(--blue-subtle);
+}
+
+.openings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.openings-submit-box {
+  background-color: var(--background-light);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  padding: 32px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.openings-submit-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+}
+
+.openings-submit-box p {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+}
+
+.recruitment-email-link {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary-red);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Life at FXTrade Page (Three White Content Cards)
+   ========================================================================== */
+.life-page-wrapper {
+  padding: 60px 0 80px;
+}
+
+.life-pillars-3col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 60px;
+}
+
+.life-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.life-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(208, 0, 0, 0.2);
+}
+
+.life-card-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-red);
+  margin-bottom: 4px;
+}
+
+.life-card-underline {
+  width: 35px;
+  height: 2.5px;
+  background-color: var(--black);
+  margin-bottom: 12px;
+}
+
+.life-card-tagline {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--primary-navy);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.life-card-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Culture Photo Gallery */
+.culture-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.gallery-photo-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  height: 240px;
+}
+
+.gallery-photo-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-smooth);
+}
+
+.gallery-photo-card:hover img {
+  transform: scale(1.06);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+  color: var(--white);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   404 Page Not Found
+   ========================================================================== */
+.notfound-wrapper {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.notfound-code {
+  font-size: 96px;
+  font-weight: 900;
+  color: var(--primary-navy);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.notfound-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--primary-red);
+  margin-bottom: 14px;
+}
+
+.notfound-text {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+/* ==========================================================================
+   Shared Page Card Grids (Desktop Defaults)
+   ========================================================================== */
+.contact-dept-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 60px;
+}
+
+.contact-dept-card {
+  background: var(--background-light);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 20px 16px;
+  text-align: center;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.contact-dept-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--primary-red);
+}
+
+.contact-dept-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 8px;
+}
+
+.contact-dept-email {
+  display: block;
+  font-size: 12.5px;
+  color: var(--primary-red);
+  margin-bottom: 4px;
+  word-break: break-all;
+}
+
+.contact-dept-phone {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.life-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.life-highlight-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.life-highlight-card:hover {
+  transform: translateY(-3px);
+}
+
+.life-highlight-card.border-red {
+  border-top: 3px solid var(--primary-red);
+}
+
+.life-highlight-card.border-blue {
+  border-top: 3px solid var(--corporate-blue);
+}
+
+.life-highlight-card.border-navy {
+  border-top: 3px solid var(--primary-navy);
+}
+
+.life-highlight-title {
+  font-size: 15px;
+  color: var(--primary-navy);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.life-highlight-desc {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.appraisal-stages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.appraisal-stage-card {
+  background: var(--background-light);
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+}
+
+.appraisal-stage-phase {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-red);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.appraisal-stage-name {
+  font-size: 13.5px;
+  color: var(--primary-navy);
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+.appraisal-stage-desc {
+  font-size: 12px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.dtf-benefits-grid,
+.itf-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.dtf-benefit-card,
+.itf-benefit-card {
+  background: var(--background-light);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.dtf-benefit-card.border-red,
+.itf-benefit-card.border-red {
+  border-left: 4px solid var(--primary-red);
+}
+
+.dtf-benefit-card.border-blue,
+.itf-benefit-card.border-blue {
+  border-left: 4px solid var(--corporate-blue);
+}
+
+.dtf-benefit-title,
+.itf-benefit-title {
+  color: var(--primary-navy);
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.dtf-benefit-desc,
+.itf-benefit-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.dtf-guarantees-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.dtf-guarantee-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.dtf-guarantee-type {
+  font-size: 14px;
+  color: var(--primary-red);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.dtf-guarantee-desc {
+  font-size: 12.5px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.buyers-credit-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.buyers-credit-step-card {
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+.buyers-credit-step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary-navy);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.buyers-credit-step-title {
+  font-size: 13px;
+  color: var(--primary-navy);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.buyers-credit-step-desc {
+  font-size: 11.5px;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin: 0;
+}
+
