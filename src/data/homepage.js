@@ -25,7 +25,8 @@ export const homepageData = {
       description: "Direct access to 50+ overseas correspondent bank branches and pan-India discounting desks for 24–48 hour non-recourse cash disbursals.",
       primaryCta: { label: "Domestic Trade Finance", path: "/domestic-trade-finance" },
       secondaryCta: { label: "International Trade", path: "/international-trade-finance" },
-      image: "/images/about/intl-cargo.jpg"
+      image: "/images/about/hl.jpeg",
+      backgroundPosition: "center -145px"
     },
     {
       id: "slide-4",
@@ -301,7 +302,7 @@ export const homepageData = {
       { src: "/images/about/real-corporate-consulting.jpg", title: "Client Transaction Structuring" },
       { src: "/images/about/canary-wharf.jpg", title: "Global Banking Horizons" },
       { src: "/images/about/singapore-skyline.jpg", title: "Overseas Correspondent Network" },
-      { src: "/images/about/real-corporate-towers.jpg", title: "Corporate Headquarters - Joy Tower" }
+      { src: "/images/about/hl.jpeg", title: "Corporate Headquarters - Joy Tower" }
     ]
   }
 };

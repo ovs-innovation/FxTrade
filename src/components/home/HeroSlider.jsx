@@ -57,9 +57,10 @@ export const HeroSlider = () => {
             {slides.map((slide, idx) => (
               <div
                 key={slide.id || idx}
-                className="hero-slide-item"
+                className={`hero-slide-item ${slide.id ? `hero-slide-${slide.id}` : ''}`}
                 style={{
-                  backgroundImage: `url(${slide.image})`
+                  backgroundImage: `url(${slide.image})`,
+                  backgroundPosition: slide.backgroundPosition || 'center'
                 }}
               >
                 {/* Dark Overlay */}
