@@ -78,8 +78,8 @@
 }
 
 .nav-brand-img {
-  height: 76px;
-  max-height: 78px;
+  height: 92px;
+  max-height: 94px;
   width: auto;
   object-fit: contain;
   transition: all var(--transition-fast);
@@ -87,7 +87,7 @@
 }
 
 .site-header.home-variant.is-scrolled .nav-brand-img {
-  height: 58px;
+  height: 66px;
 }
 
 .nav-brand:hover .nav-brand-img {

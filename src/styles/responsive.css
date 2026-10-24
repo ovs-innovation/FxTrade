@@ -96,7 +96,7 @@
   
   .navbar-pill-wrapper,
   .navbar-inner-wrapper {
-    padding: 10px 20px;
+    padding: 6px 18px;
     min-height: auto;
   }
   
@@ -106,8 +106,8 @@
   }
 
   .nav-brand-img {
-    height: 56px;
-    max-height: 58px;
+    height: 76px;
+    max-height: 78px;
   }
   
   .hero-slide-card {
@@ -1167,8 +1167,8 @@
   }
   
   .nav-brand-img {
-    height: 56px;
-    max-height: 58px;
+    height: 70px;
+    max-height: 72px;
   }
 
   .values-card-desc,
