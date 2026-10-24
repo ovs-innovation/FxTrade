@@ -10,10 +10,10 @@ export const companyData = {
   
   stats: [
     {
-      value: "30+",
+      value: "9+",
       label: "Years",
       title: "Advisory Track Record",
-      description: "Decades of combined leadership expertise across Corporate Finance, Treasury & Syndication"
+      description: "Founded in 2017 with dedicated transaction expertise across Corporate Finance, Treasury & Syndication"
     },
     {
       value: "70+",
@@ -77,7 +77,7 @@ export const companyData = {
 
     exposure: {
       heading: "Experience, Exposure and Expertise",
-      text: "With over 30 years of combined professional experience in Indian and overseas banking circles, FXTrade brings unmatched insight into risk underwriting, limit appraisals, and lender expectations. Our leadership has structured landmark syndications, rescued stressed liquidity lines, and scaled EPC contractor capabilities through multi-crore bank guarantee mobilizations.",
+      text: "With over 9+ years of proven institutional advisory experience in Indian and overseas banking circles, FXTrade brings unmatched insight into risk underwriting, limit appraisals, and lender expectations. Our leadership has structured landmark syndications, rescued stressed liquidity lines, and scaled EPC contractor capabilities through multi-crore bank guarantee mobilizations.",
       points: [
         "Direct access to top management and credit sanctioning committees at tier-1 lenders",
         "Expertise across diverse sectors: EPC, Manufacturing, Textiles, Steel, Pharma, and Infra",

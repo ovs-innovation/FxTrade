@@ -57,8 +57,8 @@ export const InstantFunding = () => {
                 <div className="if-img-floating-badge">
                   <Zap size={20} className="if-badge-icon" />
                   <div>
-                    <span className="if-badge-title">24-Hour Sanction</span>
-                    <span className="if-badge-sub">Disbursement PAN-India</span>
+                    <span className="if-badge-title">24–48 Hr TAT</span>
+                    <span className="if-badge-sub">PAN-India Coverage</span>
                   </div>
                 </div>
               </div>
@@ -75,10 +75,10 @@ export const InstantFunding = () => {
               ))}
 
               <div className="if-highlight-pills">
-                <div className="if-pill"><CheckCircle2 size={16} /> ₹2 Cr – ₹100 Cr Ticket Size</div>
-                <div className="if-pill"><CheckCircle2 size={16} /> 24-Hour Fast-Track Processing</div>
+                <div className="if-pill"><CheckCircle2 size={16} /> ₹1 Cr – ₹100 Cr Ticket Size</div>
+                <div className="if-pill"><CheckCircle2 size={16} /> 24–48 Hr Fast-Track TAT</div>
                 <div className="if-pill"><CheckCircle2 size={16} /> Non-Banking Private Liquidity</div>
-                <div className="if-pill"><CheckCircle2 size={16} /> Direct Company Bank Credit</div>
+                <div className="if-pill"><CheckCircle2 size={16} /> High-Growth Capital Support</div>
               </div>
             </div>
           </div>
@@ -163,10 +163,9 @@ export const InstantFunding = () => {
               {data.parameters.cards.map((c, idx) => (
                 <div key={idx} className="if-param-box">
                   <div className="if-param-top">
-                    {idx === 0 && <Coins size={24} className="if-param-icon" />}
-                    {idx === 1 && <Calendar size={24} className="if-param-icon" />}
-                    {idx === 2 && <Percent size={24} className="if-param-icon" />}
-                    {idx === 3 && <MapPin size={24} className="if-param-icon" />}
+                    {c.label === "Ticket Size" && <Coins size={24} className="if-param-icon" />}
+                    {c.label === "Tenure" && <Calendar size={24} className="if-param-icon" />}
+                    {(c.label.includes("Time Duration") || c.label.includes("TAT")) && <Clock size={24} className="if-param-icon" />}
                     <span className="if-param-label">{c.label}</span>
                   </div>
                   <div className="if-param-value">{c.value}</div>
@@ -321,7 +320,7 @@ export const InstantFunding = () => {
             <div className="if-final-cta-content">
               <h2 className="if-final-cta-title">Apply for Instant Funding Today</h2>
               <p className="if-final-cta-desc">
-                Looking for quick business capital between <strong>₹2 crore to ₹100 crore</strong>? Get in touch now and receive your sanction within 24 hours.
+                Looking for quick business capital between <strong>₹1 crore to ₹100 crore</strong>? Get in touch now and receive your sanction within 24 hours.
               </p>
 
               <div className="if-final-contact-bar">

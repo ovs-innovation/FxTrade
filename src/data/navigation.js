@@ -20,7 +20,7 @@ export const navigationData = {
       label: "About Us",
       path: "/about-us",
       dropdown: [
-        { label: "Overview", path: "/about-us", desc: "Our 30+ year track record, mission and banking exposure" },
+        { label: "Overview", path: "/about-us", desc: "Our 9+ year track record, mission and banking exposure" },
         { label: "Leadership Team", path: "/leadership-team", desc: "Meet our managing directors and corporate finance architects" },
         { label: "Our Values", path: "/our-values", desc: "Core institutional pillars: integrity, agility, and client focus" }
       ]
@@ -33,7 +33,7 @@ export const navigationData = {
         { label: "Debt Syndication", path: "/debt-syndication", desc: "Consortium loans, working capital, project finance & term loans" },
         { label: "Domestic Trade Finance", path: "/domestic-trade-finance", desc: "Inland LC discounting, BG limits & vendor financing" },
         { label: "International Trade Finance", path: "/international-trade-finance", desc: "Supplier's credit, SBLC buyer's credit & foreign funding" },
-        { label: "Instant Funding", path: "/instant-funding", desc: "Fast private funding ₹2 Cr - ₹100 Cr with 24-hr disbursement" }
+        { label: "Instant Funding", path: "/instant-funding", desc: "Fast private funding ₹1 Cr - ₹100 Cr with 24-48 hr TAT" }
       ]
     },
     {

@@ -79,7 +79,7 @@ export const LeadershipTeam = () => {
                 <h2 className="service-main-heading">MANAGEMENT & STRATEGIC ADVISORY BOARD</h2>
                 <div className="service-heading-underline" />
                 <p style={{ fontSize: '14.5px', color: 'var(--text-secondary)', lineHeight: 1.7 }}>
-                  Our leadership team consists of seasoned corporate finance strategists, banking consortium directors, and treasury advisors with over three decades of cumulative transaction experience across Indian and international credit markets.
+                  Our leadership team consists of seasoned corporate finance strategists, banking consortium directors, and treasury advisors with over 9+ years of proven institutional transaction experience across Indian and international credit markets.
                 </p>
               </div>
 

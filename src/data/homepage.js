@@ -89,13 +89,13 @@ export const homepageData = {
     },
     {
       id: "instant-funding",
-      title: "Instant Private Funding (₹2 Cr – ₹100 Cr)",
-      description: "Fast, flexible high-ticket private debt and bridge funding solutions sanctioned and disbursed within 24 hours directly to corporate bank accounts PAN-India.",
+      title: "Instant Private Funding (₹1 Cr – ₹100 Cr)",
+      description: "Fast, flexible high-ticket private debt and bridge funding solutions sanctioned within 24 to 48 hours PAN-India.",
       features: [
-        "High Ticket Size: ₹2 Crore to ₹100 Crore",
-        "Super-Fast 24-Hour Sanction & Disbursement",
+        "High Ticket Size: ₹1 Crore to ₹100 Crore",
+        "Super-Fast TAT: 24 to 48 Hours",
         "Short-term flexible tenure: 4 to 6 Months",
-        "Direct company bank account PAN-India credit"
+        "Direct non-banking institutional liquidity"
       ],
       image: "/images/about/advisory-meeting.jpg",
       link: "/instant-funding"
@@ -169,7 +169,7 @@ export const homepageData = {
       {
         id: "b1",
         title: "Seasoned Professional Expertise",
-        text: "Over 30 years of combined institutional banking and treasury leadership ensuring informed, strategic capital decisions."
+        text: "Over 9+ years of institutional banking and treasury leadership ensuring informed, strategic capital decisions."
       },
       {
         id: "b2",

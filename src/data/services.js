@@ -53,11 +53,11 @@ export const servicesData = {
       title: "Instant Funding",
       slug: "instant-funding",
       route: "/instant-funding",
-      shortDesc: "Fast, flexible & high-ticket private funding solutions (₹2 Cr – ₹100 Cr) sanctioned and disbursed within 24 hours PAN-India.",
+      shortDesc: "Fast, flexible & high-ticket private funding solutions (₹1 Cr – ₹100 Cr) sanctioned within 24 hours PAN-India.",
       image: "/images/about/advisory-meeting.jpg",
       subservices: [
         { id: "overview", title: "Instant Funding Overview", path: "/instant-funding#overview" },
-        { id: "parameters", title: "Facility Parameters (₹2 Cr - ₹100 Cr)", path: "/instant-funding#parameters" },
+        { id: "parameters", title: "Facility Parameters (₹1 Cr - ₹100 Cr)", path: "/instant-funding#parameters" },
         { id: "why-private-funding", title: "Why Choose Private Funding", path: "/instant-funding#why-private-funding" },
         { id: "eligibility", title: "Eligibility & Required Documents", path: "/instant-funding#eligibility" },
         { id: "process", title: "How The Process Works", path: "/instant-funding#process" },
@@ -354,15 +354,15 @@ export const servicesData = {
       badge: "Fast, Flexible & High Ticket Private Funding",
       title: "Best Instant Funding Provider Firm In India",
       subtitle: "Instant Private Funding Solutions for Growing Enterprises Across India",
-      ticketSize: "₹2 Cr – ₹100 Cr",
-      turnaround: "Sanction & Disbursal in 24 Hours",
-      panIndia: "PAN-India Direct Bank Credit"
+      ticketSize: "₹1 Cr – ₹100 Cr",
+      turnaround: "TAT: 24 – 48 Hours",
+      panIndia: "PAN-India Coverage"
     },
     overview: {
       heading: "FXTrade Consulting - The Premier Instant Funding & Private Debt Partner in India",
       paragraphs: [
         "At FXTrade Consulting, we understand that businesses frequently encounter critical inflection points where immediate capital is indispensable to seize time-sensitive market opportunities, bridge working capital cycles, purchase bulk inventory at high discounts, or fuel rapid operational expansion. Our Private Funding Services are engineered to deliver fast, flexible, reliable, and high-ticket financial liquidity with minimal waiting time and maximum convenience.",
-        "Unlike conventional banking channels that take months for multi-stage appraisal and bureaucratic documentation, our specialized private debt and bridge funding solutions operate on high-velocity credit evaluation. We partner with established corporate lenders, private debt funds, family offices, and NBFC consortiums to ensure prompt sanction and disbursement directly into your company's bank account."
+        "Unlike conventional banking channels that take months for multi-stage appraisal and bureaucratic documentation, our specialized private debt and bridge funding solutions operate on high-velocity credit evaluation. We partner with established corporate lenders, private debt funds, family offices, and NBFC consortiums to ensure prompt sanction directly into your company's bank account."
       ],
       contactBanner: {
         title: "Ready To Grow? Discover The Benefits Of Instant Private Funding For Your Business!",
@@ -400,33 +400,32 @@ export const servicesData = {
       { number: "1200+", label: "Finishing Projects & Deals" },
       { number: "195+", label: "Institutional Lenders" },
       { number: "850+", label: "Happy Corporate Clients" },
-      { number: "30+", label: "Years Experience" }
+      { number: "9+", label: "Years Experience" }
     ],
     parameters: {
       title: "Get Instant Private Funding Services by FXTrade Consulting",
       subtitle: "Fast, Flexible & High Ticket Private Funding Solutions for Businesses Across India",
       cards: [
-        { label: "Ticket Size", value: "₹2 Cr – ₹100 Cr", desc: "Catering to MSMEs, corporates, traders, and high-growth contractors" },
+        { label: "Ticket Size", value: "₹1 Cr – ₹100 Cr", desc: "Catering to MSMEs, corporates, traders, and high-growth contractors" },
         { label: "Tenure", value: "4 – 6 Months", desc: "Short-term bridge tenure ideal for working capital without debt burdens" },
-        { label: "ROI (Monthly)", value: "1.5% – 4.5% / month", desc: "Competitive risk-adjusted rates with clear transparency" },
-        { label: "Disbursement", value: "Direct Company Account", desc: "PAN-India direct bank credit within 24 hours of approval" }
+        { label: "Time Duration (TAT)", value: "24 Hrs – 48 Hrs", desc: "Fast-track assessment and sanction turnaround within 24 to 48 hours" }
       ]
     },
     whyChoose: [
       {
         num: "1",
-        title: "Ultra-Fast Processing (Sanction & Disbursement in 24 Hours)",
-        desc: "We specialize in super-fast approvals, ensuring your funds are sanctioned and disbursed within just 24 hours, subject to document verification."
+        title: "Ultra-Fast Processing (TAT: 24 - 48 Hours)",
+        desc: "We specialize in super-fast approvals, ensuring your funds are sanctioned within 24 to 48 hours, subject to document verification."
       },
       {
         num: "2",
         title: "High Ticket Funding for Growing Businesses",
-        desc: "With a funding range of ₹2 crore to ₹100 crore, we cater to MSMEs, corporates, traders, and businesses seeking immediate capital for medium-term business needs."
+        desc: "With a funding range of ₹1 crore to ₹100 crore, we cater to MSMEs, corporates, traders, and businesses seeking immediate capital for medium-term business needs."
       },
       {
         num: "3",
-        title: "Hassle-Free Disbursement Across India",
-        desc: "We provide PAN-India disbursement directly into your company's bank account, making the process smooth, seamless, and transparent."
+        title: "PAN-India Fast-Track Access",
+        desc: "We provide seamless access across India, connecting your business with established private debt lenders and institutional liquidity."
       },
       {
         num: "4",
@@ -461,8 +460,8 @@ export const servicesData = {
       },
       {
         step: "Step 3",
-        title: "Disbursement",
-        desc: "Approved funds are transferred directly to your company account PAN-India."
+        title: "Fund Release",
+        desc: "Approved funds are credited directly to your company account PAN-India."
       },
       {
         step: "Step 4",
@@ -479,10 +478,10 @@ export const servicesData = {
       { title: "Bridge Funding Seekers", desc: "Businesses exploring private lending over traditional banking delays." }
     ],
     trustReasons: [
-      "Over 30 years of premier corporate and structured finance expertise",
+      "Over 9+ years of premier corporate and structured finance advisory expertise",
       "Robust network of trusted private lenders, family offices & capital partners",
       "Transparent process with no hidden deductions or conditions",
-      "Fastest turnaround time in the industry (Sanction in 24 hours)",
+      "Fastest turnaround time in the industry (TAT: 24 to 48 hours)",
       "Relationship-first approach tailored to your enterprise's cash flow"
     ]
   }

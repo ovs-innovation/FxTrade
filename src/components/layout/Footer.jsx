@@ -24,7 +24,7 @@ export const Footer = () => {
               />
             </Link>
             <p className="footer-about-text">
-              FXTrade was founded in the year 1994, driven by the aspiration to create a hub of Finance professionals in the space of Corporate Finance. The main objective is to provide prompt, professional and committed Fund Raising services by way of varied short term and long-term financial products at an optimal cost and terms.
+              FXTrade was founded in the year 2017, driven by the aspiration to create a hub of Finance professionals in the space of Corporate Finance. The main objective is to provide prompt, professional and committed Fund Raising services by way of varied short term and long-term financial products at an optimal cost and terms.
             </p>
 
             {/* Social Media Links Matching Reference Image */}

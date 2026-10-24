@@ -219,7 +219,7 @@ export const ContactSection = () => {
                   <option value="Domestic Trade Finance">Domestic Trade Finance & Inland LCBD</option>
                   <option value="International Trade Finance">International Trade & Supplier's Credit</option>
                   <option value="Bank Guarantee Limits">Bank Guarantee Limits (PBG/APG)</option>
-                  <option value="Instant Funding">Instant Private Funding (₹2 Cr - ₹100 Cr)</option>
+                  <option value="Instant Funding">Instant Private Funding (₹1 Cr - ₹100 Cr)</option>
                   <option value="Supply Chain Finance">Supply Chain Finance & Factoring</option>
                 </select>
               </div>

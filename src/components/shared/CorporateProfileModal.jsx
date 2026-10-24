@@ -42,7 +42,7 @@ export const CorporateProfileModal = ({ isOpen, onClose }) => {
             <ul style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '12.5px', color: 'var(--text-secondary)' }}>
               <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <CheckCircle2 size={16} color="var(--primary-red)" />
-                30+ Years Advisory Track Record in Corporate & Trade Finance
+                9+ Years Advisory Track Record in Corporate & Trade Finance
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <CheckCircle2 size={16} color="var(--primary-red)" />
@@ -50,7 +50,7 @@ export const CorporateProfileModal = ({ isOpen, onClose }) => {
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <CheckCircle2 size={16} color="var(--primary-red)" />
-                Inland LC Discounting (LCBD) & Fast-Track Disbursals
+                Inland LC Discounting (LCBD) & Fast-Track Fund Release
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 <CheckCircle2 size={16} color="var(--primary-red)" />
