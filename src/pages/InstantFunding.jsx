@@ -66,7 +66,7 @@ export const InstantFunding = () => {
 
             {/* Right Content Column */}
             <div className="if-content-col">
-              <span className="if-eyebrow">FAST & FLEXIBLE PRIVATE DEBT</span>
+              <span className="if-eyebrow">FAST & FLEXIBLE DEBT</span>
               <h2 className="if-section-title">{data.overview.heading}</h2>
               <div className="if-title-underline" />
 
@@ -77,7 +77,7 @@ export const InstantFunding = () => {
               <div className="if-highlight-pills">
                 <div className="if-pill"><CheckCircle2 size={16} /> ₹1 Cr – ₹100 Cr Ticket Size</div>
                 <div className="if-pill"><CheckCircle2 size={16} /> 24–48 Hr Fast-Track TAT</div>
-                <div className="if-pill"><CheckCircle2 size={16} /> Non-Banking Private Liquidity</div>
+                <div className="if-pill"><CheckCircle2 size={16} /> Non-Banking Liquidity</div>
                 <div className="if-pill"><CheckCircle2 size={16} /> High-Growth Capital Support</div>
               </div>
             </div>
@@ -118,7 +118,7 @@ export const InstantFunding = () => {
                 <div className="if-service-icon-wrap">
                   {svc.id === 'trade-finance' && <Ship size={28} />}
                   {svc.id === 'project-finance' && <Building2 size={28} />}
-                  {svc.id === 'private-equity' && <Coins size={28} />}
+                  {(svc.id === 'equity-debt' || svc.id === 'private-equity') && <Coins size={28} />}
                   {svc.id === 'business-advisory' && <Briefcase size={28} />}
                 </div>
                 <h4 className="if-service-box-title">{svc.title}</h4>
@@ -177,12 +177,13 @@ export const InstantFunding = () => {
         </div>
       </section>
 
-      {/* 7. Why Choose Private Funding from FXTrade */}
-      <section id="why-private-funding" className="if-section if-why-section">
+      {/* 7. Why Choose Instant Funding from FXTrade */}
+      <section id="why-instant-funding" className="if-section if-why-section">
+        <span id="why-private-funding" style={{ display: 'none' }} />
         <div className="container">
           <div className="if-section-header">
             <span className="if-eyebrow">COMPETITIVE ADVANTAGE</span>
-            <h2 className="if-section-title">Why Choose Private Funding from FXTrade Consulting?</h2>
+            <h2 className="if-section-title">Why Choose Instant Funding from FXTrade Consulting?</h2>
             <div className="if-title-underline" />
           </div>
 
@@ -208,7 +209,7 @@ export const InstantFunding = () => {
             <h2 className="if-section-title">Eligibility Criteria & Checklist</h2>
             <div className="if-title-underline" />
             <p className="if-section-subtitle">
-              To avail Instant Private Funding from FXTrade Consulting, your company should meet the following basic requirements:
+              To avail Instant Funding from FXTrade Consulting, your company should meet the following basic requirements:
             </p>
           </div>
 
@@ -262,7 +263,7 @@ export const InstantFunding = () => {
               <h3 className="if-section-title">Who Should Apply?</h3>
               <div className="if-title-underline" />
               <p className="if-text" style={{ marginBottom: '20px' }}>
-                Our private funding facilities are tailored for enterprises with high capital velocity:
+                Our instant funding facilities are tailored for enterprises with high capital velocity:
               </p>
 
               <div className="if-target-cards-list">

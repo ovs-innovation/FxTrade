@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, ArrowRight } from 'lucide-react';
+import { CheckCircle2, ArrowRight, Image as ImageIcon } from 'lucide-react';
 import PageBanner from '../components/layout/PageBanner';
 import { companyData } from '../data/company';
 
@@ -33,11 +33,14 @@ export const AboutUs = () => {
             </div>
 
             <div className="about-intro-media">
-              <img
-                src="/images/about/about-team.jpg"
-                alt="FXTrade Corporate Consulting Advisory Team"
-                onError={(e) => { e.target.src = '/images/about/real-corporate-consulting.jpg'; }}
-              />
+              {/* Placeholder for future client-provided corporate image */}
+              {/* When new image arrives, replace with: <img src="/images/about/your-new-image.jpg" alt="About FXTrade" /> */}
+              <div className="about-media-placeholder">
+                <div className="placeholder-content">
+                  <ImageIcon size={44} strokeWidth={1.5} className="placeholder-icon" />
+                  <span>Corporate Image Space</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -96,10 +99,10 @@ export const AboutUs = () => {
 
             <div style={{ borderRadius: '12px', overflow: 'hidden', boxShadow: 'var(--shadow-md)' }}>
               <img
-                src="/images/about/hero-corporate-treasury-desk.jpg"
+                src="/p3.jpeg"
                 alt="FXTrade Serving Business Financial Goals"
-                onError={(e) => { e.target.src = '/images/about/about-hero-executive-port.jpg'; }}
-                style={{ width: '100%', height: '380px', objectFit: 'cover' }}
+                onError={(e) => { e.target.src = '/p5.jpeg'; }}
+                style={{ width: '100%', height: '380px', objectFit: 'cover', objectPosition: 'center' }}
               />
             </div>
           </div>

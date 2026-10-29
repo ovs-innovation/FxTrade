@@ -100,31 +100,22 @@ export const companyData = {
 
   leadership: [
     {
-      id: "subhash-kumar",
-      name: "Subhash Kumar",
+      id: "kaushal-singh",
+      name: "Kaushal Singh",
       designation: "Founder & Managing Director",
-      experience: "25+ Years in Banking & Treasury",
-      bio: "Subhash Kumar brings over two decades of senior banking and financial leadership. Prior to founding FXTrade Consulting, he held senior executive roles driving commercial banking, debt syndication, and forex advisory for premier Indian and foreign banking institutions. His vision has steered FXTrade into a trusted partner for hundreds of mid-corporates seeking structured finance.",
-      image: "/images/team/leader-subhash.jpg",
+      experience: "15+ Years in Banking & Treasury",
+      bio: "Kaushal Singh brings over fifteen years of senior banking and financial leadership. Prior to founding FXTrade Consulting, he held senior executive roles driving commercial banking, debt syndication, and forex advisory for premier Indian and foreign banking institutions. His vision has steered FXTrade into a trusted partner for hundreds of mid-corporates seeking structured finance.",
+      image: "/images/team/leader-kaushal.jpg",
       expertise: ["Debt Syndication", "Corporate Banking", "Infrastructure Finance", "Bank Consortium Management"]
     },
     {
-      id: "sunayana",
-      name: "Sunayana",
-      designation: "Executive Director & Head of Treasury",
-      experience: "18+ Years in Trade Finance & Forex",
-      bio: "Sunayana leads FXTrade's International Trade Finance and Treasury Consulting vertical. With deep expertise in Inland LC discounting, cross-border Supplier's Credit, SBLCs, and foreign exchange hedging, she guides corporate clients through complex regulatory frameworks, FEMA compliances, and correspondent banking networks across Southeast Asia, Europe, and the Middle East.",
-      image: "/images/team/leader-sunayana.jpg",
-      expertise: ["International Trade Finance", "Supplier's Credit", "Treasury & FTPO", "Risk Management"]
-    },
-    {
-      id: "ranjeet-singh",
-      name: "Ranjeet Singh",
-      designation: "Head — Corporate Finance & Debt Syndication",
-      experience: "15+ Years in Structured Funding & Credit Rating",
-      bio: "Ranjeet leads the corporate finance desk at FXTrade, overseeing debt structuring, working capital limit appraisals, and credit rating advisory. He maintains active interfaces with credit heads of top public and private sector banks, ensuring fast-tracked sanctions for EPC contractors, manufacturing powerhouses, and export houses.",
-      image: "/images/team/real-corporate-consulting.jpg",
-      expertise: ["Working Capital Finance", "Credit Rating Advisory", "NFB Limits & BGs", "Invoice Factoring"]
+      id: "romit-bajaj",
+      name: "Romit Bajaj",
+      designation: "Business & Head of Treasury",
+      experience: "17+ Years in Trade Finance & Forex",
+      bio: "Romit Bajaj leads FXTrade's Business operations and Treasury consulting practice. With over 17 years of specialized expertise in corporate treasury, inland LC discounting, supplier's credit, and structured debt advisory, he drives institutional banking solutions and liquidity access for enterprises across India.",
+      image: "/images/team/leader-romit.jpg",
+      expertise: ["Trade Finance", "Treasury Operations", "Supplier's Credit", "Corporate Business Advisory"]
     }
   ],
 

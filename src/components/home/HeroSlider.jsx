@@ -1,37 +1,91 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { homepageData } from '../../data/homepage';
 
 export const HeroSlider = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const slides = homepageData.heroSlides;
+  const totalSlides = slides.length;
 
-  // Auto-advance slides every 6.5 seconds, resets on slide interaction
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6500);
+  // Extended slides with clones at both boundaries for seamless one-directional infinite loop
+  // [Clone of Last, Slide 0, Slide 1, Slide 2, Slide 3, Clone of First]
+  const extendedSlides = [
+    { ...slides[totalSlides - 1], id: `clone-last-${slides[totalSlides - 1].id}` },
+    ...slides,
+    { ...slides[0], id: `clone-first-${slides[0].id}` }
+  ];
 
-    return () => clearInterval(timer);
-  }, [currentSlide, slides.length]);
-
+  // Start at index 1 (the first real slide)
+  const [currentSlide, setCurrentSlide] = useState(1);
+  const [isTransitioning, setIsTransitioning] = useState(true);
+  const isSlidingRef = useRef(false);
   const [touchStartX, setTouchStartX] = useState(null);
 
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
+  // Active indicator dot index (0 to totalSlides - 1)
+  const activeDot =
+    currentSlide === 0
+      ? totalSlides - 1
+      : currentSlide === totalSlides + 1
+      ? 0
+      : currentSlide - 1;
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    if (isSlidingRef.current) return;
+    isSlidingRef.current = true;
+    setIsTransitioning(true);
+    setCurrentSlide((prev) => prev + 1);
   };
 
+  const prevSlide = () => {
+    if (isSlidingRef.current) return;
+    isSlidingRef.current = true;
+    setIsTransitioning(true);
+    setCurrentSlide((prev) => prev - 1);
+  };
+
+  const goToSlide = (idx) => {
+    if (isSlidingRef.current || activeDot === idx) return;
+    isSlidingRef.current = true;
+    setIsTransitioning(true);
+    setCurrentSlide(idx + 1);
+  };
+
+  const handleTransitionEnd = (e) => {
+    // Only respond to transitions on the sliding track itself
+    if (e.target !== e.currentTarget) return;
+
+    isSlidingRef.current = false;
+
+    // If we transitioned forward past the last slide onto the clone of the first slide,
+    // seamlessly snap back to the actual first slide (index 1) with transition disabled
+    if (currentSlide === extendedSlides.length - 1) {
+      setIsTransitioning(false);
+      setCurrentSlide(1);
+    }
+    // If we transitioned backward before the first slide onto the clone of the last slide,
+    // seamlessly snap to the actual last slide with transition disabled
+    else if (currentSlide === 0) {
+      setIsTransitioning(false);
+      setCurrentSlide(totalSlides);
+    }
+  };
+
+  // Auto-advance slides every 4.5 seconds in one continuous direction (never rewinds)
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextSlide();
+    }, 4500);
+
+    return () => clearInterval(timer);
+  }, [currentSlide]);
+
   const handleTouchStart = (e) => {
+    if (isSlidingRef.current) return;
     setTouchStartX(e.touches[0].clientX);
   };
 
   const handleTouchEnd = (e) => {
-    if (touchStartX === null) return;
+    if (touchStartX === null || isSlidingRef.current) return;
     const diff = touchStartX - e.changedTouches[0].clientX;
     if (diff > 45) {
       nextSlide();
@@ -49,14 +103,20 @@ export const HeroSlider = () => {
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
-          {/* Continuous Sliding Track */}
+          {/* Continuous Sliding Track with seamless boundary reset */}
           <div
             className="hero-slides-track"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            onTransitionEnd={handleTransitionEnd}
+            style={{
+              transform: `translateX(-${currentSlide * 100}%)`,
+              transition: isTransitioning
+                ? 'transform 0.45s cubic-bezier(0.25, 1, 0.5, 1)'
+                : 'none'
+            }}
           >
-            {slides.map((slide, idx) => (
+            {extendedSlides.map((slide, idx) => (
               <div
-                key={slide.id || idx}
+                key={`${slide.id}-${idx}`}
                 className={`hero-slide-item ${slide.id ? `hero-slide-${slide.id}` : ''}`}
                 style={{
                   backgroundImage: `url(${slide.image})`,
@@ -112,8 +172,8 @@ export const HeroSlider = () => {
               <button
                 key={idx}
                 type="button"
-                className={`hero-dot ${idx === currentSlide ? 'is-active' : ''}`}
-                onClick={() => setCurrentSlide(idx)}
+                className={`hero-dot ${idx === activeDot ? 'is-active' : ''}`}
+                onClick={() => goToSlide(idx)}
                 aria-label={`Go to slide ${idx + 1}`}
               />
             ))}

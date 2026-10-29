@@ -25,14 +25,14 @@ export const homepageData = {
       description: "Direct access to 50+ overseas correspondent bank branches and pan-India discounting desks for 24–48 hour non-recourse cash disbursals.",
       primaryCta: { label: "Domestic Trade Finance", path: "/domestic-trade-finance" },
       secondaryCta: { label: "International Trade", path: "/international-trade-finance" },
-      image: "/images/about/hl.jpeg",
-      backgroundPosition: "center -145px"
+      image: "/images/about/real-banking-district.jpg",
+      backgroundPosition: "center"
     },
     {
       id: "slide-4",
       badge: "Instant Funding & Strategic Advisory",
       heading: "Unlocking Strategic Capital, Supply Chain Finance & Instant Funding",
-      description: "Specialized financial structuring for vendor financing, off-balance sheet liquidity, RoDTEP scrip monetization, and 24-hour instant private funding.",
+      description: "Specialized financial structuring for vendor financing, off-balance sheet liquidity, RoDTEP scrip monetization, and 24-hour instant funding.",
       primaryCta: { label: "Instant Funding", path: "/instant-funding" },
       secondaryCta: { label: "Schedule Consultation", path: "/contact-us" },
       image: "/images/hero/hero-indian-deal-handshake.jpg"
@@ -90,8 +90,8 @@ export const homepageData = {
     },
     {
       id: "instant-funding",
-      title: "Instant Private Funding (₹1 Cr – ₹100 Cr)",
-      description: "Fast, flexible high-ticket private debt and bridge funding solutions sanctioned within 24 to 48 hours PAN-India.",
+      title: "Instant Funding (₹1 Cr – ₹100 Cr)",
+      description: "Fast, flexible high-ticket debt and bridge funding solutions sanctioned within 24 to 48 hours PAN-India.",
       features: [
         "High Ticket Size: ₹1 Crore to ₹100 Crore",
         "Super-Fast TAT: 24 to 48 Hours",
@@ -297,12 +297,12 @@ export const homepageData = {
       }
     ],
     gallery: [
-      { src: "/images/about/advisory-meeting.jpg", title: "Strategic Advisory Session" },
-      { src: "/images/about/about-hero-team-meeting.jpg", title: "Consortium Review Meeting" },
-      { src: "/images/about/real-corporate-consulting.jpg", title: "Client Transaction Structuring" },
-      { src: "/images/about/canary-wharf.jpg", title: "Global Banking Horizons" },
-      { src: "/images/about/singapore-skyline.jpg", title: "Overseas Correspondent Network" },
-      { src: "/images/about/hl.jpeg", title: "Corporate Headquarters - Joy Tower" }
+      { src: "/p3.jpeg", title: "Strategic Advisory Session" },
+      { src: "/p2.jpeg", title: "Consortium Review Meeting" },
+      { src: "/p5.jpeg", title: "Client Transaction Structuring" },
+      { src: "/p1.jpeg", title: "Executive Breakout Lounge" },
+      { src: "/p4.jpeg", title: "Joy Tower Skyline Terrace" },
+      { src: "/images/about/hl.jpeg", title: "Corporate Headquarters - Joy Tower", objectPosition: "center top" }
     ]
   }
 };

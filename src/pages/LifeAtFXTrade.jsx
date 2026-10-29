@@ -76,6 +76,7 @@ export const LifeAtFXTrade = () => {
                   <img
                     src={photo.src}
                     alt={photo.title}
+                    style={photo.objectPosition ? { objectPosition: photo.objectPosition } : undefined}
                     onError={(e) => { e.target.src = '/images/about/real-corporate-consulting.jpg'; }}
                   />
                   <div className="gallery-caption">{photo.title}</div>

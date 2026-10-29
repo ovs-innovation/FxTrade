@@ -91,7 +91,7 @@ export const LeadershipTeam = () => {
                     <img
                       src={leader.image}
                       alt={leader.name}
-                      onError={(e) => { e.target.src = '/images/about/real-corporate-consulting.jpg'; }}
+                      onError={(e) => { e.target.src = '/images/team/leader-kaushal.jpg'; }}
                     />
                   </div>
 

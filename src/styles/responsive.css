@@ -538,7 +538,8 @@
     margin-bottom: 40px;
   }
 
-  .about-intro-media img {
+  .about-intro-media img,
+  .about-media-placeholder {
     height: 220px;
     border-radius: 12px;
   }
@@ -613,29 +614,35 @@
     gap: 25px;
   }
 
-  /* Contact Us Page Department 2x2 Grid */
-  .contact-dept-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px 10px;
-    margin-bottom: 35px;
+  /* Contact Us Page Department Desks Bar */
+  .contact-desks-list-bar {
+    gap: 8px;
+    margin-bottom: 16px;
   }
 
-  .contact-dept-card {
-    padding: 14px 10px;
-    border-radius: 10px;
+  .contact-desk-pill {
+    padding: 8px 14px;
+    font-size: 12px;
+    gap: 7px;
   }
 
-  .contact-dept-title {
-    font-size: 12.5px;
-    margin-bottom: 4px;
+  .contact-quick-channels-bar {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+    width: 100%;
   }
 
-  .contact-dept-email {
-    font-size: 10.5px;
+  .quick-channel-card {
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    justify-content: flex-start;
   }
 
-  .contact-dept-phone {
-    font-size: 10.5px;
+  .quick-channel-val {
+    font-size: 13.5px;
   }
 
   .contact-map-panel {

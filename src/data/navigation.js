@@ -33,7 +33,7 @@ export const navigationData = {
         { label: "Debt Syndication", path: "/debt-syndication", desc: "Consortium loans, working capital, project finance & term loans" },
         { label: "Domestic Trade Finance", path: "/domestic-trade-finance", desc: "Inland LC discounting, BG limits & vendor financing" },
         { label: "International Trade Finance", path: "/international-trade-finance", desc: "Supplier's credit, SBLC buyer's credit & foreign funding" },
-        { label: "Instant Funding", path: "/instant-funding", desc: "Fast private funding ₹1 Cr - ₹100 Cr with 24-48 hr TAT" }
+        { label: "Instant Funding", path: "/instant-funding", desc: "Fast funding ₹1 Cr - ₹100 Cr with 24-48 hr TAT" }
       ]
     },
     {
