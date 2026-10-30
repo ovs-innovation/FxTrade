@@ -7,7 +7,8 @@ export const navigationData = {
   actionButton: {
     label: "Corporate PPT",
     sublabel: "Company Profile",
-    downloadName: "FXTrade_Corporate_Profile.pdf"
+    url: "/12.pdf",
+    downloadName: "12.pdf"
   },
   links: [
     {

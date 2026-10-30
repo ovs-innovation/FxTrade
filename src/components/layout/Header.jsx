@@ -109,14 +109,15 @@ export const Header = () => {
 
             {/* Action Button: Corporate PPT */}
             <div className="nav-actions">
-              <button
-                type="button"
+              <a
+                href="/12.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-nav-ppt"
-                onClick={() => setIsModalOpen(true)}
-                title="View FXTrade Corporate Presentation"
+                title="Open FXTrade Corporate PPT"
               >
                 <span>{navigationData.actionButton.label}</span>
-              </button>
+              </a>
 
               {/* Mobile Menu Toggle Button */}
               <button
@@ -215,18 +216,17 @@ export const Header = () => {
         </ul>
 
         <div style={{ padding: '20px', marginTop: 'auto' }}>
-          <button
-            type="button"
+          <a
+            href="/12.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary"
-            style={{ width: '100%' }}
-            onClick={() => {
-              setIsMobileMenuOpen(false);
-              setIsModalOpen(true);
-            }}
+            style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', textDecoration: 'none' }}
+            onClick={() => setIsMobileMenuOpen(false)}
           >
             <FileText size={16} />
             {navigationData.actionButton.label}
-          </button>
+          </a>
         </div>
       </aside>
 

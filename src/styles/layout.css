@@ -231,6 +231,7 @@
   transition: all var(--transition-fast);
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .btn-nav-ppt:hover {
@@ -238,6 +239,7 @@
   color: var(--white);
   box-shadow: 0 6px 24px rgba(40, 133, 59, 0.44);
   transform: translateY(-1px);
+  text-decoration: none;
 }
 
 /* Mobile Toggle */

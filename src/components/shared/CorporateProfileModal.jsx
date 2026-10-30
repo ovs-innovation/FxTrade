@@ -61,12 +61,14 @@ export const CorporateProfileModal = ({ isOpen, onClose }) => {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <a
-              href={`mailto:${contactData.emails[0].address}?subject=Request for FXTrade Corporate Presentation&body=Hello FXTrade Team, Please share your updated Corporate Presentation (PPT) and limit appraisal docket.`}
+              href="/12.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary"
-              style={{ width: '100%' }}
+              style={{ width: '100%', textDecoration: 'none' }}
             >
               <Download size={16} />
-              Request Official Corporate Deck (PDF/PPT)
+              Open Official Corporate Deck (PDF)
             </a>
 
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: '12.5px', color: 'var(--text-secondary)', padding: '8px 4px' }}>

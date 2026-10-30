@@ -105,7 +105,8 @@ export const companyData = {
       designation: "Founder & Managing Director",
       experience: "15+ Years in Banking & Treasury",
       bio: "Kaushal Singh brings over fifteen years of senior banking and financial leadership. Prior to founding FXTrade Consulting, he held senior executive roles driving commercial banking, debt syndication, and forex advisory for premier Indian and foreign banking institutions. His vision has steered FXTrade into a trusted partner for hundreds of mid-corporates seeking structured finance.",
-      image: "/images/team/leader-kaushal.jpg",
+      image: "/f1.jpeg",
+      objectPosition: "center 20%",
       expertise: ["Debt Syndication", "Corporate Banking", "Infrastructure Finance", "Bank Consortium Management"]
     },
     {
@@ -114,7 +115,7 @@ export const companyData = {
       designation: "Business & Head of Treasury",
       experience: "17+ Years in Trade Finance & Forex",
       bio: "Romit Bajaj leads FXTrade's Business operations and Treasury consulting practice. With over 17 years of specialized expertise in corporate treasury, inland LC discounting, supplier's credit, and structured debt advisory, he drives institutional banking solutions and liquidity access for enterprises across India.",
-      image: "/images/team/leader-romit.jpg",
+      image: null,
       expertise: ["Trade Finance", "Treasury Operations", "Supplier's Credit", "Corporate Business Advisory"]
     }
   ],

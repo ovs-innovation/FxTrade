@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CheckCircle2, Phone, Mail } from 'lucide-react';
+import { CheckCircle2, Phone, Mail, User } from 'lucide-react';
 import PageBanner from '../components/layout/PageBanner';
 import { companyData } from '../data/company';
 import { contactData } from '../data/contact';
@@ -88,11 +88,21 @@ export const LeadershipTeam = () => {
                   
                   {/* Photo */}
                   <div className="leader-photo-wrap">
-                    <img
-                      src={leader.image}
-                      alt={leader.name}
-                      onError={(e) => { e.target.src = '/images/team/leader-kaushal.jpg'; }}
-                    />
+                    {leader.image ? (
+                      <img
+                        src={leader.image}
+                        alt={leader.name}
+                        style={leader.objectPosition ? { objectPosition: leader.objectPosition } : undefined}
+                        onError={(e) => { e.target.src = '/images/team/leader-kaushal.jpg'; }}
+                      />
+                    ) : (
+                      <div className="leader-photo-placeholder">
+                        <div className="placeholder-content">
+                          <User size={40} strokeWidth={1.5} className="placeholder-icon" />
+                          <span>Photo Space</span>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   {/* Info */}
