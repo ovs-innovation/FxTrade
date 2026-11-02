@@ -93,7 +93,9 @@ export const LeadershipTeam = () => {
                         src={leader.image}
                         alt={leader.name}
                         style={leader.objectPosition ? { objectPosition: leader.objectPosition } : undefined}
-                        onError={(e) => { e.target.src = '/images/team/leader-kaushal.jpg'; }}
+                        onError={(e) => {
+                          e.target.src = leader.id === 'romit-bajaj' ? '/Romit pic 1.jpg' : '/v2.jpeg';
+                        }}
                       />
                     ) : (
                       <div className="leader-photo-placeholder">
