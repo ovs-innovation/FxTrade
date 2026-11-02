@@ -1,11 +1,35 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Phone, Mail } from 'lucide-react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Phone } from 'lucide-react';
 import { servicesData } from '../../data/services';
 import { contactData } from '../../data/contact';
 
 export const ServiceSidebar = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleSubLinkClick = (e, path) => {
+    const [targetRoute, targetHash] = path.split('#');
+
+    if (location.pathname === targetRoute) {
+      e.preventDefault();
+      if (targetHash) {
+        const element = document.getElementById(targetHash);
+        if (element) {
+          const headerOffset = 90;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      navigate(path);
+    }
+  };
 
   return (
     <aside className="service-sidebar" aria-label="Services Navigation">
@@ -19,14 +43,17 @@ export const ServiceSidebar = () => {
             <h4 className="sidebar-category-title">{cat.title}</h4>
             <ul className="sidebar-nav-list">
               {cat.subservices.map((sub) => {
-                const isAnchorActive = location.hash
-                  ? sub.path.includes(location.hash)
-                  : isCurrentCategory && sub.path.endsWith('#overview');
+                const isAnchorActive = isCurrentCategory && (
+                  location.hash
+                    ? sub.path.endsWith(location.hash)
+                    : sub.path.endsWith('#overview')
+                );
 
                 return (
                   <li key={sub.id} className="sidebar-nav-item">
                     <Link
                       to={sub.path}
+                      onClick={(e) => handleSubLinkClick(e, sub.path)}
                       className={`sidebar-nav-link ${isAnchorActive ? 'is-active' : ''}`}
                     >
                       <span className="sidebar-bullet" />

@@ -3,7 +3,7 @@ export const companyData = {
   shortName: "FXTrade",
   tagline: "Raising Capital • Fueling Success",
   eyebrow: "CORPORATE FINANCE • DEBT SYNDICATION • TRADE FINANCE • FOREX",
-  advisoryDesk: "+91-9834604137",
+  advisoryDesk: "+91-9990050123",
   email: "ranjeet@fxtradefin.com",
   website: "https://fxtradefin.com/",
   cin: "U67190UP2021PTC145021",
@@ -103,11 +103,11 @@ export const companyData = {
       id: "kaushal-singh",
       name: "Kaushal Singh",
       designation: "Founder & Managing Director",
-      experience: "15+ Years in Banking & Treasury",
-      bio: "Kaushal Singh brings over fifteen years of senior banking and financial leadership. Prior to founding FXTrade Consulting, he held senior executive roles driving commercial banking, debt syndication, and forex advisory for premier Indian and foreign banking institutions. His vision has steered FXTrade into a trusted partner for hundreds of mid-corporates seeking structured finance.",
+      experience: "17+ Years in Corporate Banking & Debt Syndication",
+      bio: "Kaushal Singh is a seasoned financial services professional with over 17 years of experience in Corporate Banking, Debt Syndication, and Corporate Trade Finance.\n\nHe specializes in Debt Syndication, Working Capital Finance, Term Loans, and Structured Debt Solutions, including CC, OD, WCTL, Bill Discounting, Bank Guarantees, Letters of Credit, and Import & Export Financing.\n\nWith strong expertise in financial structuring, corporate funding, and banking relationships, he focuses on delivering customized financing solutions, facilitating strategic partnerships, and driving sustainable business growth.",
       image: "/v2.jpeg",
       objectPosition: "center 15%",
-      expertise: ["Debt Syndication", "Corporate Banking", "Infrastructure Finance", "Bank Consortium Management"]
+      expertise: ["Debt Syndication", "Working Capital & Term Loans", "Structured Debt Solutions", "Corporate Trade Finance"]
     },
     {
       id: "romit-bajaj",

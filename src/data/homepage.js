@@ -59,7 +59,7 @@ export const homepageData = {
         "Project Finance & Consortium Loan Structuring",
         "Credit Rating Advisory & Balance Sheet Optimization"
       ],
-      image: "/images/about/debt-structuring.jpg",
+      image: "/images/about/hero-indian-deal-handshake.jpg",
       link: "/debt-syndication"
     },
     {
@@ -72,7 +72,7 @@ export const homepageData = {
         "Low margin money and competitive discounting margins",
         "Non-recourse and limited-recourse bill purchase"
       ],
-      image: "/images/about/domestic-lc.jpg",
+      image: "/images/about/about-team.jpg",
       link: "/domestic-trade-finance"
     },
     {
@@ -85,7 +85,7 @@ export const homepageData = {
         "Export Letter of Credit discounting and advisory",
         "Strict compliance with RBI & FEMA trade guidelines"
       ],
-      image: "/images/about/intl-correspondent.jpg",
+      image: "/images/about/about-hero-team-meeting.jpg",
       link: "/international-trade-finance"
     },
     {

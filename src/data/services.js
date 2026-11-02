@@ -7,7 +7,7 @@ export const servicesData = {
       slug: "debt-syndication",
       route: "/debt-syndication",
       shortDesc: "Comprehensive debt syndication, working capital limits, term loans, project finance, and balance sheet restructuring through 70+ bank branches.",
-      image: "/images/about/debt-structuring.jpg",
+      image: "/images/about/hero-indian-deal-handshake.jpg",
       subservices: [
         { id: "overview", title: "Debt Syndication Overview", path: "/debt-syndication#overview" },
         { id: "working-capital", title: "Working Capital Finance", path: "/debt-syndication#working-capital" },
@@ -24,7 +24,7 @@ export const servicesData = {
       slug: "domestic-trade-finance",
       route: "/domestic-trade-finance",
       shortDesc: "Accelerate domestic liquidity with Inland LC discounting, purchase order funding, invoice factoring, and Bank Guarantee (BG) limits.",
-      image: "/images/about/domestic-lc.jpg",
+      image: "/images/about/about-team.jpg",
       subservices: [
         { id: "overview", title: "Domestic Trade Finance Overview", path: "/domestic-trade-finance#overview" },
         { id: "inland-lc", title: "Negotiation / Discounting of Inland LC", path: "/domestic-trade-finance#inland-lc" },
@@ -39,7 +39,7 @@ export const servicesData = {
       slug: "international-trade-finance",
       route: "/international-trade-finance",
       shortDesc: "End-to-end cross-border solutions: Supplier's Credit, SBLC-backed Buyer's Credit, Export LC discounting, and global correspondent bank networks.",
-      image: "/images/about/intl-cargo.jpg",
+      image: "/images/about/about-hero-team-meeting.jpg",
       subservices: [
         { id: "overview", title: "International Trade Overview", path: "/international-trade-finance#overview" },
         { id: "suppliers-credit", title: "Supplier's Credit", path: "/international-trade-finance#suppliers-credit" },

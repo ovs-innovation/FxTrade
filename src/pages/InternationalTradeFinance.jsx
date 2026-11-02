@@ -71,7 +71,7 @@ export const InternationalTradeFinance = () => {
       <section id="trade-benefits" className="service-section-block">
         <h2 className="service-main-heading">WHY CHOOSE FXTRADE FOR CROSS-BORDER FUNDING</h2>
         <div className="service-heading-underline" />
-        <div className="itf-benefits-grid">
+        <div id="advantages" className="itf-benefits-grid">
           <div className="itf-benefit-card border-red">
             <h4 className="itf-benefit-title">
               Substantial Interest Arbitrage

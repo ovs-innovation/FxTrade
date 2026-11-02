@@ -3,13 +3,34 @@ import { useLocation } from 'react-router-dom';
 import { ArrowUp } from 'lucide-react';
 
 export const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
   const [isVisible, setIsVisible] = useState(false);
 
-  // Scroll to top on route change
+  // Scroll to top or target hash on route change
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (hash) {
+      const targetId = hash.replace('#', '');
+      const scrollToElement = () => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          const headerOffset = 90;
+          const elementPosition = element.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      };
+
+      // Try immediately and after DOM update
+      scrollToElement();
+      const timer = setTimeout(scrollToElement, 150);
+      return () => clearTimeout(timer);
+    } else {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname, hash]);
 
   // Handle visibility on scroll
   useEffect(() => {

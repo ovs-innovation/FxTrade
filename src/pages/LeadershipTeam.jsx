@@ -112,7 +112,11 @@ export const LeadershipTeam = () => {
                     <h3>{leader.name}</h3>
                     <span className="leader-designation">{leader.designation}</span>
                     <span className="leader-experience">{leader.experience}</span>
-                    <p className="leader-bio">{leader.bio}</p>
+                    <div className="leader-bio-wrap">
+                      {leader.bio.split('\n\n').map((para, pIdx) => (
+                        <p key={pIdx} className="leader-bio">{para}</p>
+                      ))}
+                    </div>
 
                     <h5 style={{ fontSize: '12px', textTransform: 'uppercase', color: 'var(--primary-navy)', marginBottom: '8px', fontWeight: 700 }}>
                       Key Focus Areas:

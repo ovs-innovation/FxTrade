@@ -146,10 +146,12 @@
   min-width: 0; /* Prevents overflow */
 }
 
+.service-content-col [id],
 .service-section-block {
   margin-bottom: 60px;
   padding-bottom: 45px;
   border-bottom: 1px solid var(--border-light);
+  scroll-margin-top: 100px;
 }
 
 .service-section-block:last-child {

@@ -5,7 +5,7 @@ export const contactData = {
   subtitle: "Connect with our senior advisory team to discuss Corporate Finance, Debt Syndication, Inland LCBD, Supplier's Credit, or structured funding requirements.",
   
   phones: [
-    { display: "+91-9834604137", tel: "+919834604137", label: "Corporate Advisory Desk" }
+    { display: "+91-9990050123", tel: "+919990050123", label: "Corporate Advisory Desk" }
   ],
   
   emails: [
@@ -32,14 +32,14 @@ export const contactData = {
   businessHours: "10:00 AM – 6:00 PM IST",
   weeklyOff: "Sunday Closed",
   
-  whatsappUrl: "https://wa.me/919834604137?text=Hello%20FXTrade%20Consulting%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
+  whatsappUrl: "https://wa.me/919990050123?text=Hello%20FXTrade%20Consulting%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
   
   corporatePptUrl: "/downloads/FXTrade_Corporate_Profile.pdf",
 
   departments: [
-    { name: "Debt Syndication Desk", email: "ranjeet@fxtradefin.com", phone: "+91-9834604137" },
-    { name: "Trade Finance & Inland LCBD", email: "ranjeet@fxtradefin.com", phone: "+91-9834604137" },
-    { name: "Forex & Treasury Operations", email: "ranjeet@fxtradefin.com", phone: "+91-9834604137" },
-    { name: "Careers & Talent Acquisition", email: "ranjeet@fxtradefin.com", phone: "+91-9834604137" }
+    { name: "Debt Syndication Desk", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" },
+    { name: "Trade Finance & Inland LCBD", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" },
+    { name: "Forex & Treasury Operations", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" },
+    { name: "Careers & Talent Acquisition", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" }
   ]
 };
