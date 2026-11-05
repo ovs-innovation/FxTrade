@@ -237,7 +237,7 @@ export const homepageData = {
   careers: {
     heading: "Current Openings at FXTrade",
     intro: "Join an elite team of corporate finance strategists, debt syndication specialists, and trade finance architects. We offer an intellectually rigorous environment where merit is celebrated and career growth is accelerated.",
-    recruitmentEmail: "ranjeet@fxtradefin.com",
+    recruitmentEmail: "finance@fxtradefin.com",
     openings: [
       {
         id: "1",

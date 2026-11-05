@@ -9,8 +9,7 @@ export const contactData = {
   ],
   
   emails: [
-    { address: "ranjeet@fxtradefin.com", label: "Corporate Advisory & Inquiries" },
-    { address: "info@fxtradefin.com", label: "General Information Desk" }
+    { address: "finance@fxtradefin.com", label: "Corporate Advisory & Inquiries" }
   ],
   
   website: "https://fxtradefin.com/",
@@ -37,9 +36,9 @@ export const contactData = {
   corporatePptUrl: "/downloads/FXTrade_Corporate_Profile.pdf",
 
   departments: [
-    { name: "Debt Syndication Desk", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" },
-    { name: "Trade Finance & Inland LCBD", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" },
-    { name: "Forex & Treasury Operations", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" },
-    { name: "Careers & Talent Acquisition", email: "ranjeet@fxtradefin.com", phone: "+91-9990050123" }
+    { name: "Debt Syndication Desk", email: "finance@fxtradefin.com", phone: "+91-9990050123" },
+    { name: "Trade Finance & Inland LCBD", email: "finance@fxtradefin.com", phone: "+91-9990050123" },
+    { name: "Forex & Treasury Operations", email: "finance@fxtradefin.com", phone: "+91-9990050123" },
+    { name: "Careers & Talent Acquisition", email: "finance@fxtradefin.com", phone: "+91-9990050123" }
   ]
 };

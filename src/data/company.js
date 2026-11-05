@@ -4,7 +4,7 @@ export const companyData = {
   tagline: "Raising Capital • Fueling Success",
   eyebrow: "CORPORATE FINANCE • DEBT SYNDICATION • TRADE FINANCE • FOREX",
   advisoryDesk: "+91-9990050123",
-  email: "ranjeet@fxtradefin.com",
+  email: "finance@fxtradefin.com",
   website: "https://fxtradefin.com/",
   cin: "U67190UP2021PTC145021",
   
