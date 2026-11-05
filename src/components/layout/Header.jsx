@@ -110,7 +110,7 @@ export const Header = () => {
             {/* Action Button: Corporate PPT */}
             <div className="nav-actions">
               <a
-                href="/12.pdf"
+                href="/fxx.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-nav-ppt"
@@ -217,7 +217,7 @@ export const Header = () => {
 
         <div style={{ padding: '20px', marginTop: 'auto' }}>
           <a
-            href="/12.pdf"
+            href="/fxx.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-primary"

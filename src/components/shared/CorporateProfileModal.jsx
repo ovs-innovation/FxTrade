@@ -61,7 +61,7 @@ export const CorporateProfileModal = ({ isOpen, onClose }) => {
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             <a
-              href="/12.pdf"
+              href="/fxx.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"

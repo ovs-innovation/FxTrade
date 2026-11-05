@@ -33,7 +33,7 @@ export const contactData = {
   
   whatsappUrl: "https://wa.me/919990050123?text=Hello%20FXTrade%20Consulting%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
   
-  corporatePptUrl: "/downloads/FXTrade_Corporate_Profile.pdf",
+  corporatePptUrl: "/fxx.pdf",
 
   departments: [
     { name: "Debt Syndication Desk", email: "finance@fxtradefin.com", phone: "+91-9990050123" },

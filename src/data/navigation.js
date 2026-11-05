@@ -7,8 +7,8 @@ export const navigationData = {
   actionButton: {
     label: "Corporate PPT",
     sublabel: "Company Profile",
-    url: "/12.pdf",
-    downloadName: "12.pdf"
+    url: "/fxx.pdf",
+    downloadName: "fxx.pdf"
   },
   links: [
     {
